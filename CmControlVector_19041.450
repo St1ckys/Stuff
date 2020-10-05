@@ -1,0 +1,2143 @@
+CmControlVector dq offset aSessionManager_11
+INIT:0000000140AA7CE0                                         ; DATA XREF: CmpGetSystemControlValues+39↑o
+INIT:0000000140AA7CE0                                         ; CmpGetSystemControlValues+1AF↑r
+INIT:0000000140AA7CE0                                         ; "Session Manager"
+INIT:0000000140AA7CE8                 dq offset aProtectionmode ; "ProtectionMode"
+INIT:0000000140AA7CF0                 dq offset ObpProtectionMode
+INIT:0000000140AA7CF8                 dq 3 dup(0)
+INIT:0000000140AA7D10                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AA7D18                 dq offset aObjectsecurity ; "ObjectSecurityMode"
+INIT:0000000140AA7D20                 dq offset ObpObjectSecurityMode
+INIT:0000000140AA7D28                 align 20h
+INIT:0000000140AA7D40                 dq offset aLsa          ; "LSA"
+INIT:0000000140AA7D48                 dq offset aAuditbasedirec ; "AuditBaseDirectories"
+INIT:0000000140AA7D50                 dq offset ObpAuditBaseDirectories
+INIT:0000000140AA7D58                 dq 3 dup(0)
+INIT:0000000140AA7D70                 dq offset aLsa          ; "LSA"
+INIT:0000000140AA7D78                 dq offset aAuditbaseobjec ; "AuditBaseObjects"
+INIT:0000000140AA7D80                 dq offset ObpAuditBaseObjects
+INIT:0000000140AA7D88                 align 20h
+INIT:0000000140AA7DA0                 dq offset aLsaAudit     ; "LSA\\audit"
+INIT:0000000140AA7DA8                 dq offset aProcessaccesse ; "ProcessAccessesToAudit"
+INIT:0000000140AA7DB0                 dq offset SepProcessAccessesToAudit
+INIT:0000000140AA7DB8                 dq 3 dup(0)
+INIT:0000000140AA7DD0                 dq offset aTimezoneinform_1 ; "TimeZoneInformation"
+INIT:0000000140AA7DD8                 dq offset aActivetimebias ; "ActiveTimeBias"
+INIT:0000000140AA7DE0                 dq offset ExpLastTimeZoneBias
+INIT:0000000140AA7DE8                 dq 2 dup(0)
+INIT:0000000140AA7DF8                 dq 1
+INIT:0000000140AA7E00                 dq offset aTimezoneinform_1 ; "TimeZoneInformation"
+INIT:0000000140AA7E08                 dq offset aBias_0       ; "Bias"
+INIT:0000000140AA7E10                 dq offset ExpAltTimeZoneBias
+INIT:0000000140AA7E18                 dq 2 dup(0)
+INIT:0000000140AA7E28                 dq 1
+INIT:0000000140AA7E30                 dq offset aTimezoneinform_1 ; "TimeZoneInformation"
+INIT:0000000140AA7E38                 dq offset aRealtimeisuniv ; "RealTimeIsUniversal"
+INIT:0000000140AA7E40                 dq offset ExpRealTimeIsUniversal
+INIT:0000000140AA7E48                 dq 2 dup(0)
+INIT:0000000140AA7E58                 dq 1
+INIT:0000000140AA7E60                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AA7E68                 dq offset aGlobalflag   ; "GlobalFlag"
+INIT:0000000140AA7E70                 dq offset CmNtGlobalFlag
+INIT:0000000140AA7E78                 dq 3 dup(0)
+INIT:0000000140AA7E90                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AA7E98                 dq offset aGlobalflag2  ; "GlobalFlag2"
+INIT:0000000140AA7EA0                 dq offset CmNtGlobalFlag2
+INIT:0000000140AA7EA8                 align 20h
+INIT:0000000140AA7EC0                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AA7EC8                 dq offset aCwdillegalindl ; "CWDIllegalInDLLSearch"
+INIT:0000000140AA7ED0                 dq offset PspCurDirDevicesSkippedForDlls
+INIT:0000000140AA7ED8                 dq 3 dup(0)
+INIT:0000000140AA7EF0                 dq offset aSessionManager_17 ; "Session Manager\\Quota System"
+INIT:0000000140AA7EF8                 dq offset aApplicationblo ; "ApplicationBlockedMessageLimit"
+INIT:0000000140AA7F00                 dq offset PspJobNoWakeChargeLimit
+INIT:0000000140AA7F08                 align 20h
+INIT:0000000140AA7F20                 dq offset aSessionManager_17 ; "Session Manager\\Quota System"
+INIT:0000000140AA7F28                 dq offset aSystemblockedm ; "SystemBlockedMessageLimit"
+INIT:0000000140AA7F30                 dq offset PspSystemNoWakeChargeLimit
+INIT:0000000140AA7F38                 dq 3 dup(0)
+INIT:0000000140AA7F50                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA7F58                 dq offset aPagedpoolquota_0 ; "PagedPoolQuota"
+INIT:0000000140AA7F60                 dq offset unk_140D2C99C
+INIT:0000000140AA7F68                 align 20h
+INIT:0000000140AA7F80                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA7F88                 dq offset aNonpagedpoolqu_0 ; "NonPagedPoolQuota"
+INIT:0000000140AA7F90                 dq offset PspDefaultResourceLimits
+INIT:0000000140AA7F98                 dq 3 dup(0)
+INIT:0000000140AA7FB0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA7FB8                 dq offset aPagingfilequot ; "PagingFileQuota"
+INIT:0000000140AA7FC0                 dq offset unk_140D2C9A0
+INIT:0000000140AA7FC8                 align 20h
+INIT:0000000140AA7FE0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA7FE8                 dq offset aWorkingsetpage ; "WorkingSetPagesQuota"
+INIT:0000000140AA7FF0                 dq offset unk_140D2C9A4
+INIT:0000000140AA7FF8                 dq 3 dup(0)
+INIT:0000000140AA8010                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8018                 dq offset aAllocationpref ; "AllocationPreference"
+INIT:0000000140AA8020                 dq offset dword_140CFA190
+INIT:0000000140AA8028                 align 20h
+INIT:0000000140AA8040                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8048                 dq offset aMirroring    ; "Mirroring"
+INIT:0000000140AA8050                 dq offset dword_140CFA184
+INIT:0000000140AA8058                 dq 3 dup(0)
+INIT:0000000140AA8070                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8078                 dq offset aMoveimages   ; "MoveImages"
+INIT:0000000140AA8080                 dq offset MmRegistryState
+INIT:0000000140AA8088                 align 20h
+INIT:0000000140AA80A0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA80A8                 dq offset aLargepagedrive ; "LargePageDrivers"
+INIT:0000000140AA80B0                 dq offset MmLargePageDriverBuffer
+INIT:0000000140AA80B8                 dq offset MmLargePageDriverBufferLength
+INIT:0000000140AA80C0                 dq 2 dup(0)
+INIT:0000000140AA80D0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA80D8                 dq offset aLowmemorythres ; "LowMemoryThreshold"
+INIT:0000000140AA80E0                 dq offset qword_140CFA1C0
+INIT:0000000140AA80E8                 align 20h
+INIT:0000000140AA8100                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8108                 dq offset aHighmemorythre ; "HighMemoryThreshold"
+INIT:0000000140AA8110                 dq offset qword_140CFA1C8
+INIT:0000000140AA8118                 dq 3 dup(0)
+INIT:0000000140AA8130                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8138                 dq offset aDisablepagecom ; "DisablePageCombining"
+INIT:0000000140AA8140                 dq offset dword_140CFA178
+INIT:0000000140AA8148                 align 20h
+INIT:0000000140AA8160                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8168                 dq offset aDisablepaginge ; "DisablePagingExecutive"
+INIT:0000000140AA8170                 dq offset dword_140CFA174
+INIT:0000000140AA8178                 dq 3 dup(0)
+INIT:0000000140AA8190                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8198                 dq offset aEnablecooling ; "EnableCooling"
+INIT:0000000140AA81A0                 dq offset dword_140CFA188
+INIT:0000000140AA81A8                 align 20h
+INIT:0000000140AA81C0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA81C8                 dq offset aModifiedwritem ; "ModifiedWriteMaximum"
+INIT:0000000140AA81D0                 dq offset dword_140CFA18C
+INIT:0000000140AA81D8                 dq 3 dup(0)
+INIT:0000000140AA81F0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA81F8                 dq offset aPooltagsmallta ; "PoolTagSmallTableSize"
+INIT:0000000140AA8200                 dq offset PoolTrackTableSize
+INIT:0000000140AA8208                 align 20h
+INIT:0000000140AA8220                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8228                 dq offset aPooltag      ; "PoolTag"
+INIT:0000000140AA8230                 dq offset MmSpecialPoolTag
+INIT:0000000140AA8238                 dq 3 dup(0)
+INIT:0000000140AA8250                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8258                 dq offset aPooltagoverrun ; "PoolTagOverruns"
+INIT:0000000140AA8260                 dq offset MmSpecialPoolCatchOverruns
+INIT:0000000140AA8268                 align 20h
+INIT:0000000140AA8280                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8288                 dq offset aProtectnonpage ; "ProtectNonPagedPool"
+INIT:0000000140AA8290                 dq offset MmProtectFreedNonPagedPool
+INIT:0000000140AA8298                 dq 3 dup(0)
+INIT:0000000140AA82B0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA82B8                 dq offset aTracklockedpag ; "TrackLockedPages"
+INIT:0000000140AA82C0                 dq offset MmTrackLockedPages
+INIT:0000000140AA82C8                 align 20h
+INIT:0000000140AA82E0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA82E8                 dq offset aTrackptes    ; "TrackPtes"
+INIT:0000000140AA82F0                 dq offset dword_140CFA17C
+INIT:0000000140AA82F8                 dq 3 dup(0)
+INIT:0000000140AA8310                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8318                 dq offset aPagevalidation ; "PageValidationAction"
+INIT:0000000140AA8320                 dq offset MmPageValidationAction
+INIT:0000000140AA8328                 align 20h
+INIT:0000000140AA8340                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8348                 dq offset aPagevalidation_0 ; "PageValidationFrequency"
+INIT:0000000140AA8350                 dq offset MmPageValidationFrequency
+INIT:0000000140AA8358                 dq 3 dup(0)
+INIT:0000000140AA8370                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8378                 dq offset aForcevalidatei ; "ForceValidateIo"
+INIT:0000000140AA8380                 dq offset dword_140CFA180
+INIT:0000000140AA8388                 align 20h
+INIT:0000000140AA83A0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA83A8                 dq offset aVerifieroption ; "VerifierOptions"
+INIT:0000000140AA83B0                 dq offset VfOptionFlags
+INIT:0000000140AA83B8                 dq 2 dup(0)
+INIT:0000000140AA83C8                 dq 1
+INIT:0000000140AA83D0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA83D8                 dq offset aVerifiertipdis ; "VerifierTipDisable"
+INIT:0000000140AA83E0                 dq offset VerifierTipDisable
+INIT:0000000140AA83E8                 dq 2 dup(0)
+INIT:0000000140AA83F8                 dq 1
+INIT:0000000140AA8400                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8408                 dq offset aVerifiernewrul ; "VerifierNewRuleWorkaround"
+INIT:0000000140AA8410                 dq offset VerifierNewRuleWorkaround
+INIT:0000000140AA8418                 dq 2 dup(0)
+INIT:0000000140AA8428                 dq 1
+INIT:0000000140AA8430                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8438                 dq offset aVerifierirpsta ; "VerifierIrpStackTraces"
+INIT:0000000140AA8440                 dq offset IovIrpTracesLength
+INIT:0000000140AA8448                 dq 2 dup(0)
+INIT:0000000140AA8458                 dq 1
+INIT:0000000140AA8460                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8468                 dq offset aVerifierhandle ; "VerifierHandleTraces"
+INIT:0000000140AA8470                 dq offset VfHandleTracingEntries
+INIT:0000000140AA8478                 dq 2 dup(0)
+INIT:0000000140AA8488                 dq 1
+INIT:0000000140AA8490                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8498                 dq offset aVerifierirptim ; "VerifierIrpTimeout"
+INIT:0000000140AA84A0                 dq offset VfWdIrpTimeoutMsec
+INIT:0000000140AA84A8                 dq 2 dup(0)
+INIT:0000000140AA84B8                 dq 1
+INIT:0000000140AA84C0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA84C8                 dq offset aVerifydriverle ; "VerifyDriverLevel"
+INIT:0000000140AA84D0                 dq offset MmVerifyDriverLevel
+INIT:0000000140AA84D8                 dq 2 dup(0)
+INIT:0000000140AA84E8                 dq 1
+INIT:0000000140AA84F0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA84F8                 dq offset aVerifydrivers ; "VerifyDrivers"
+INIT:0000000140AA8500                 dq offset MmVerifyDriverBuffer
+INIT:0000000140AA8508                 dq offset MmVerifyDriverBufferLength
+INIT:0000000140AA8510                 dq 0
+INIT:0000000140AA8518                 dq 1
+INIT:0000000140AA8520                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8528                 dq offset aVerifiersettin_0 ; "VerifierSettingState"
+INIT:0000000140AA8530                 dq offset VfRuleClasses
+INIT:0000000140AA8538                 dq offset VfRuleClassesSize
+INIT:0000000140AA8540                 dq 0
+INIT:0000000140AA8548                 dq 1
+INIT:0000000140AA8550                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8558                 dq offset aXdvverifieropt_0 ; "XdvVerifierOptions"
+INIT:0000000140AA8560                 dq offset VfFlightOptions
+INIT:0000000140AA8568                 dq 2 dup(0)
+INIT:0000000140AA8578                 dq 1
+INIT:0000000140AA8580                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8588                 dq offset aVerifymode   ; "VerifyMode"
+INIT:0000000140AA8590                 dq offset VfVerifyMode
+INIT:0000000140AA8598                 dq 2 dup(0)
+INIT:0000000140AA85A8                 dq 1
+INIT:0000000140AA85B0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA85B8                 dq offset aVerifytriage ; "VerifyTriage"
+INIT:0000000140AA85C0                 dq offset ViVerifyTriage
+INIT:0000000140AA85C8                 dq 2 dup(0)
+INIT:0000000140AA85D8                 dq 1
+INIT:0000000140AA85E0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA85E8                 dq offset aVerifytriageru ; "VerifyTriageRules"
+INIT:0000000140AA85F0                 dq offset ViVerifyTriageRules
+INIT:0000000140AA85F8                 dq offset ViVerifyTriageRulesSize
+INIT:0000000140AA8600                 dq 0
+INIT:0000000140AA8608                 dq 1
+INIT:0000000140AA8610                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8618                 dq offset aVerifierfaultp ; "VerifierFaultProbability"
+INIT:0000000140AA8620                 dq offset VfFaultInjectionProbability
+INIT:0000000140AA8628                 dq 2 dup(0)
+INIT:0000000140AA8638                 dq 1
+INIT:0000000140AA8640                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8648                 dq offset aVerifierfaultb ; "VerifierFaultBootMinutes"
+INIT:0000000140AA8650                 dq offset VfFaultInjectionBootMinutes
+INIT:0000000140AA8658                 dq 2 dup(0)
+INIT:0000000140AA8668                 dq 1
+INIT:0000000140AA8670                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8678                 dq offset aVerifierfaulta ; "VerifierFaultApplications"
+INIT:0000000140AA8680                 dq offset VerifierFaultApplicationsBuffer
+INIT:0000000140AA8688                 dq offset VerifierFaultApplicationsBufferSize
+INIT:0000000140AA8690                 dq 0
+INIT:0000000140AA8698                 dq 1
+INIT:0000000140AA86A0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA86A8                 dq offset aVerifierfaultt ; "VerifierFaultTags"
+INIT:0000000140AA86B0                 dq offset VerifierFaultTagsBuffer
+INIT:0000000140AA86B8                 dq offset VerifierFaultTagsBufferSize
+INIT:0000000140AA86C0                 dq 0
+INIT:0000000140AA86C8                 dq 1
+INIT:0000000140AA86D0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA86D8                 dq offset aVerifierlwsppo ; "VerifierLwspPoolTags"
+INIT:0000000140AA86E0                 dq offset ViLwspPoolTags
+INIT:0000000140AA86E8                 dq offset ViLwspPoolTagsSize
+INIT:0000000140AA86F0                 dq 0
+INIT:0000000140AA86F8                 dq 1
+INIT:0000000140AA8700                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8708                 dq offset aVerifierrandom ; "VerifierRandomTargets"
+INIT:0000000140AA8710                 dq offset VfRandomVerifiedDrivers
+INIT:0000000140AA8718                 dq 2 dup(0)
+INIT:0000000140AA8728                 dq 1
+INIT:0000000140AA8730                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8738                 dq offset aVerifiertiplim ; "VerifierTipLimitDenominator"
+INIT:0000000140AA8740                 dq offset ViTipControlLimitDenominator
+INIT:0000000140AA8748                 dq 2 dup(0)
+INIT:0000000140AA8758                 dq 1
+INIT:0000000140AA8760                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8768                 dq offset aVerifiertiplim_2 ; "VerifierTipLimitNumerator"
+INIT:0000000140AA8770                 dq offset ViTipControlLimitNumerator
+INIT:0000000140AA8778                 dq 2 dup(0)
+INIT:0000000140AA8788                 dq 1
+INIT:0000000140AA8790                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8798                 dq offset aVerifiertipspa ; "VerifierTipSparseness"
+INIT:0000000140AA87A0                 dq offset ViTipControlSparseness
+INIT:0000000140AA87A8                 dq 2 dup(0)
+INIT:0000000140AA87B8                 dq 1
+INIT:0000000140AA87C0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA87C8                 dq offset aVerifiertriage_0 ; "VerifierTriageContext"
+INIT:0000000140AA87D0                 dq offset VfTriageContext
+INIT:0000000140AA87D8                 dq 2 dup(0)
+INIT:0000000140AA87E8                 dq 1
+INIT:0000000140AA87F0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA87F8                 dq offset aVerifybtsbuffe ; "VerifyBTSBufferSize"
+INIT:0000000140AA8800                 dq offset ViVerifyBTSBufferSize
+INIT:0000000140AA8808                 dq 2 dup(0)
+INIT:0000000140AA8818                 dq 1
+INIT:0000000140AA8820                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8828                 dq offset aVerifydriverss ; "VerifyDriversSuppress"
+INIT:0000000140AA8830                 dq offset VfXdvSuppressDriversBuffer
+INIT:0000000140AA8838                 dq offset VfXdvSuppressDriversBufferLength
+INIT:0000000140AA8840                 dq 0
+INIT:0000000140AA8848                 dq 1
+INIT:0000000140AA8850                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8858                 dq offset aVerifierpooltr ; "VerifierPoolTracesLength"
+INIT:0000000140AA8860                 dq offset VfPoolTracesLength
+INIT:0000000140AA8868                 dq 2 dup(0)
+INIT:0000000140AA8878                 dq 1
+INIT:0000000140AA8880                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8888                 dq offset aDeadlockrecurs ; "DeadlockRecursionDepthLimit"
+INIT:0000000140AA8890                 dq offset ViRecursionDepthLimitFromRegistry
+INIT:0000000140AA8898                 dq 2 dup(0)
+INIT:0000000140AA88A8                 dq 1
+INIT:0000000140AA88B0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA88B8                 dq offset aDeadlocksearch ; "DeadlockSearchNodesLimit"
+INIT:0000000140AA88C0                 dq offset ViSearchedNodesLimitFromRegistry
+INIT:0000000140AA88C8                 dq 2 dup(0)
+INIT:0000000140AA88D8                 dq 1
+INIT:0000000140AA88E0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA88E8                 dq offset aMinimumstackco ; "MinimumStackCommitInBytes"
+INIT:0000000140AA88F0                 dq offset dword_140CFA198
+INIT:0000000140AA88F8                 dq 3 dup(0)
+INIT:0000000140AA8910                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8918                 dq offset aWorkingsetswap ; "WorkingSetSwapSharedPages"
+INIT:0000000140AA8920                 dq offset PspOutSwapSharedPages
+INIT:0000000140AA8928                 align 20h
+INIT:0000000140AA8940                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8948                 dq offset aVmpauseoutswap ; "VmPauseOutswapSizeCapMB"
+INIT:0000000140AA8950                 dq offset VmPauseOutswapSizeCapMB
+INIT:0000000140AA8958                 dq 3 dup(0)
+INIT:0000000140AA8970                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8978                 dq offset aRemotefiledirt ; "RemoteFileDirtyPageThreshold"
+INIT:0000000140AA8980                 dq offset CcRemoteFileDPInlineFlushThreshold
+INIT:0000000140AA8988                 align 20h
+INIT:0000000140AA89A0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA89A8                 dq offset aMaxlazywritepa_0 ; "MaxLazyWritePages"
+INIT:0000000140AA89B0                 dq offset CcMaxLazyWritePagesOverride
+INIT:0000000140AA89B8                 dq 3 dup(0)
+INIT:0000000140AA89D0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA89D8                 dq offset aCacheunmapbehi ; "CacheUnmapBehindLengthInMB"
+INIT:0000000140AA89E0                 dq offset CcUnmapBehindLength
+INIT:0000000140AA89E8                 align 20h
+INIT:0000000140AA8A00                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8A08                 dq offset aTopbottomdpteq_0 ; "TopBottomDPTEqual"
+INIT:0000000140AA8A10                 dq offset CcAzure_TopBottomDPTEqual
+INIT:0000000140AA8A18                 dq 3 dup(0)
+INIT:0000000140AA8A30                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8A38                 dq offset aLazywriterperc ; "LazyWriterPercentageOfNumProcs"
+INIT:0000000140AA8A40                 dq offset CcAzure_LazyWriterPercentageOfNumProcs
+INIT:0000000140AA8A48                 align 20h
+INIT:0000000140AA8A60                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8A68                 dq offset aLargewritesize_0 ; "LargeWriteSize"
+INIT:0000000140AA8A70                 dq offset CcAzure_LargeWriteSize
+INIT:0000000140AA8A78                 dq 3 dup(0)
+INIT:0000000140AA8A90                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8A98                 dq offset aSoftthrottlela ; "SoftThrottleLargeWriteAtPct"
+INIT:0000000140AA8AA0                 dq offset CcAzure_SoftThrottleLargeWriteAtPct
+INIT:0000000140AA8AA8                 align 20h
+INIT:0000000140AA8AC0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8AC8                 dq offset aSoftthrottlede_0 ; "SoftThrottleDelayInMs"
+INIT:0000000140AA8AD0                 dq offset CcAzure_SoftThrottleDelayInMs
+INIT:0000000140AA8AD8                 dq 3 dup(0)
+INIT:0000000140AA8AF0                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8AF8                 dq offset aSimulatecommit ; "SimulateCommitSavings"
+INIT:0000000140AA8B00                 dq offset dword_140CFA1D0
+INIT:0000000140AA8B08                 align 20h
+INIT:0000000140AA8B20                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8B28                 dq offset aKernelpadsecti_3 ; "KernelPadSectionsOverride"
+INIT:0000000140AA8B30                 dq offset dword_140CFA1D8
+INIT:0000000140AA8B38                 dq 3 dup(0)
+INIT:0000000140AA8B50                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8B58                 dq offset aSpecialpurpose_0 ; "SpecialPurposeMemoryStartPage"
+INIT:0000000140AA8B60                 dq offset MmSpecialPurposeMemoryStartPage
+INIT:0000000140AA8B68                 dq offset MmSpecialPurposeMemoryStartPageValueSize
+INIT:0000000140AA8B70                 align 20h
+INIT:0000000140AA8B80                 dq offset aSessionManager_7 ; "Session Manager\\Memory Management"
+INIT:0000000140AA8B88                 dq offset aSpecialpurpose ; "SpecialPurposeMemoryPages"
+INIT:0000000140AA8B90                 dq offset MmSpecialPurposeMemoryPages
+INIT:0000000140AA8B98                 dq 3 dup(0)
+INIT:0000000140AA8BB0                 dq offset aSessionManager_9 ; "Session Manager\\Executive"
+INIT:0000000140AA8BB8                 dq offset aAdditionalcrit ; "AdditionalCriticalWorkerThreads"
+INIT:0000000140AA8BC0                 dq offset ExpAdditionalCriticalWorkerThreads
+INIT:0000000140AA8BC8                 align 20h
+INIT:0000000140AA8BE0                 dq offset aSessionManager_9 ; "Session Manager\\Executive"
+INIT:0000000140AA8BE8                 dq offset aAdditionaldela ; "AdditionalDelayedWorkerThreads"
+INIT:0000000140AA8BF0                 dq offset ExpAdditionalDelayedWorkerThreads
+INIT:0000000140AA8BF8                 dq 3 dup(0)
+INIT:0000000140AA8C10                 dq offset aSessionManager_9 ; "Session Manager\\Executive"
+INIT:0000000140AA8C18                 dq offset aMaximumkernelw ; "MaximumKernelWorkerThreads"
+INIT:0000000140AA8C20                 dq offset ExpMaximumKernelWorkerThreads
+INIT:0000000140AA8C28                 align 20h
+INIT:0000000140AA8C40                 dq offset aSessionManager_9 ; "Session Manager\\Executive"
+INIT:0000000140AA8C48                 dq offset aWorkerthreadti ; "WorkerThreadTimeoutInSeconds"
+INIT:0000000140AA8C50                 dq offset ExpWorkerThreadTimeoutInSeconds
+INIT:0000000140AA8C58                 dq 3 dup(0)
+INIT:0000000140AA8C70                 dq offset aSessionManager_9 ; "Session Manager\\Executive"
+INIT:0000000140AA8C78                 dq offset aKernelworkerte ; "KernelWorkerTestFlags"
+INIT:0000000140AA8C80                 dq offset ExpWorkerQueueTestFlags
+INIT:0000000140AA8C88                 align 20h
+INIT:0000000140AA8CA0                 dq offset aSessionManager_9 ; "Session Manager\\Executive"
+INIT:0000000140AA8CA8                 dq offset aWorkerfactoryt_0 ; "WorkerFactoryThreadCreationTimeout"
+INIT:0000000140AA8CB0                 dq offset ExpWorkerFactoryThreadCreationTimeoutInSeconds
+INIT:0000000140AA8CB8                 dq 3 dup(0)
+INIT:0000000140AA8CD0                 dq offset aSessionManager_9 ; "Session Manager\\Executive"
+INIT:0000000140AA8CD8                 dq offset aWorkerfactoryt ; "WorkerFactoryThreadIdleTimeout"
+INIT:0000000140AA8CE0                 dq offset ExpWorkerFactoryThreadIdleTimeoutInSeconds
+INIT:0000000140AA8CE8                 align 20h
+INIT:0000000140AA8D00                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8D08                 dq offset aDpctimeout   ; "DPCTimeout"
+INIT:0000000140AA8D10                 dq offset KiDPCTimeout
+INIT:0000000140AA8D18                 dq 3 dup(0)
+INIT:0000000140AA8D30                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8D38                 dq offset aDpcwatchdogper ; "DpcWatchdogPeriod"
+INIT:0000000140AA8D40                 dq offset KeDpcWatchdogPeriod
+INIT:0000000140AA8D48                 align 20h
+INIT:0000000140AA8D60                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8D68                 dq offset aDpcwatchdogpro ; "DpcWatchdogProfileOffset"
+INIT:0000000140AA8D70                 dq offset KeDpcWatchdogProfileOffset
+INIT:0000000140AA8D78                 dq 3 dup(0)
+INIT:0000000140AA8D90                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8D98                 dq offset aVerifierdpcsca ; "VerifierDpcScalingFactor"
+INIT:0000000140AA8DA0                 dq offset KeVerifierDpcScalingFactor
+INIT:0000000140AA8DA8                 align 20h
+INIT:0000000140AA8DC0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8DC8                 dq offset aThreaddpcenabl ; "ThreadDpcEnable"
+INIT:0000000140AA8DD0                 dq offset KeThreadDpcEnable
+INIT:0000000140AA8DD8                 dq 3 dup(0)
+INIT:0000000140AA8DF0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8DF8                 dq offset aDpcqueuedepth ; "DpcQueueDepth"
+INIT:0000000140AA8E00                 dq offset KiMaximumDpcQueueDepth
+INIT:0000000140AA8E08                 align 20h
+INIT:0000000140AA8E20                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8E28                 dq offset aMinimumdpcrate ; "MinimumDpcRate"
+INIT:0000000140AA8E30                 dq offset KiMinimumDpcRate
+INIT:0000000140AA8E38                 dq 3 dup(0)
+INIT:0000000140AA8E50                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8E58                 dq offset aMaximumsharedr ; "MaximumSharedReadyQueueSize"
+INIT:0000000140AA8E60                 dq offset KiMaximumSharedReadyQueueSize
+INIT:0000000140AA8E68                 align 20h
+INIT:0000000140AA8E80                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8E88                 dq offset aAdjustdpcthres ; "AdjustDpcThreshold"
+INIT:0000000140AA8E90                 dq offset KiAdjustDpcThreshold
+INIT:0000000140AA8E98                 dq 3 dup(0)
+INIT:0000000140AA8EB0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8EB8                 dq offset aPassivewatchdo ; "PassiveWatchdogTimeout"
+INIT:0000000140AA8EC0                 dq offset KiPassiveWatchdogTimeout
+INIT:0000000140AA8EC8                 align 20h
+INIT:0000000140AA8EE0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8EE8                 dq offset aSchedulerassis ; "SchedulerAssistThreadFlagOverride"
+INIT:0000000140AA8EF0                 dq offset KiSchedulerAssistThreadFlagOverride
+INIT:0000000140AA8EF8                 dq 3 dup(0)
+INIT:0000000140AA8F10                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8F18                 dq offset aSerializetimer ; "SerializeTimerExpiration"
+INIT:0000000140AA8F20                 dq offset KiSerializeTimerExpiration
+INIT:0000000140AA8F28                 align 20h
+INIT:0000000140AA8F40                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8F48                 dq offset aDisabletsx   ; "DisableTsx"
+INIT:0000000140AA8F50                 dq offset KiDisableTsx
+INIT:0000000140AA8F58                 dq 3 dup(0)
+INIT:0000000140AA8F70                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8F78                 dq offset aVpthreadsystem ; "VpThreadSystemWorkPriority"
+INIT:0000000140AA8F80                 dq offset KiVpThreadSystemWorkPriority
+INIT:0000000140AA8F88                 align 20h
+INIT:0000000140AA8FA0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8FA8                 dq offset aPerfisoenabled ; "PerfIsoEnabled"
+INIT:0000000140AA8FB0                 dq offset KiPerfIsoEnabled
+INIT:0000000140AA8FB8                 dq 3 dup(0)
+INIT:0000000140AA8FD0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA8FD8                 dq offset aCacheisobitmap ; "CacheIsoBitmap"
+INIT:0000000140AA8FE0                 dq offset KiCacheIsoBitmap
+INIT:0000000140AA8FE8                 align 20h
+INIT:0000000140AA9000                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA9008                 dq offset aIdealdpcrate ; "IdealDpcRate"
+INIT:0000000140AA9010                 dq offset KiIdealDpcRate
+INIT:0000000140AA9018                 dq 3 dup(0)
+INIT:0000000140AA9030                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA9038                 dq offset aCacheerrataove ; "CacheErrataOverride"
+INIT:0000000140AA9040                 dq offset KiTLBCOverride
+INIT:0000000140AA9048                 align 20h
+INIT:0000000140AA9060                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA9068                 dq offset aMaxdynamictick ; "MaxDynamicTickDuration"
+INIT:0000000140AA9070                 dq offset KiMaxDynamicTickDuration
+INIT:0000000140AA9078                 dq offset KiMaxDynamicTickDurationSize
+INIT:0000000140AA9080                 dq 2 dup(0)
+INIT:0000000140AA9090                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA9098                 dq offset aDisableexcepti ; "DisableExceptionChainValidation"
+INIT:0000000140AA90A0                 dq offset PspSehValidationPolicy
+INIT:0000000140AA90A8                 align 20h
+INIT:0000000140AA90C0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA90C8                 dq offset aMitigationopti_0 ; "MitigationOptions"
+INIT:0000000140AA90D0                 dq offset PspSystemMitigationOptions
+INIT:0000000140AA90D8                 dq offset PspSystemMitigationOptionsLength
+INIT:0000000140AA90E0                 dq 2 dup(0)
+INIT:0000000140AA90F0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA90F8                 dq offset aMitigationaudi ; "MitigationAuditOptions"
+INIT:0000000140AA9100                 dq offset PspSystemMitigationAuditOptions
+INIT:0000000140AA9108                 dq offset PspSystemMitigationAuditOptionsLength
+INIT:0000000140AA9110                 align 20h
+INIT:0000000140AA9120                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA9128                 dq offset aDisablecontrol ; "DisableControlFlowGuardExportSuppressio"...
+INIT:0000000140AA9130                 dq offset PspDisableControlFlowGuardExportSuppression
+INIT:0000000140AA9138                 dq 3 dup(0)
+INIT:0000000140AA9150                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA9158                 dq offset aForceidlegrace ; "ForceIdleGracePeriod"
+INIT:0000000140AA9160                 dq offset KiForceIdleGracePeriodInSec
+INIT:0000000140AA9168                 align 20h
+INIT:0000000140AA9180                 dq offset aSessionManager_0 ; "Session Manager\\Kernel\\RNG"
+INIT:0000000140AA9188                 dq offset aRngauxiliaryse ; "RNGAuxiliarySeed"
+INIT:0000000140AA9190                 dq offset ExpRNGAuxiliarySeed
+INIT:0000000140AA9198                 dq 3 dup(0)
+INIT:0000000140AA91B0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA91B8                 dq offset aObtracepooltag ; "ObTracePoolTags"
+INIT:0000000140AA91C0                 dq offset ObpTracePoolTagsBuffer
+INIT:0000000140AA91C8                 dq offset ObpTracePoolTagsLength
+INIT:0000000140AA91D0                 align 20h
+INIT:0000000140AA91E0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA91E8                 dq offset aObtraceprocess ; "ObTraceProcessName"
+INIT:0000000140AA91F0                 dq offset ObpTraceProcessNameBuffer
+INIT:0000000140AA91F8                 dq offset ObpTraceProcessNameLength
+INIT:0000000140AA9200                 dq 2 dup(0)
+INIT:0000000140AA9210                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA9218                 dq offset aObtracepermane ; "ObTracePermanent"
+INIT:0000000140AA9220                 dq offset ObpTracePermanent
+INIT:0000000140AA9228                 align 20h
+INIT:0000000140AA9240                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA9248                 dq offset aPocleanshutdow ; "PoCleanShutdownFlags"
+INIT:0000000140AA9250                 dq offset PopShutdownCleanly
+INIT:0000000140AA9258                 dq 3 dup(0)
+INIT:0000000140AA9270                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA9278                 dq offset aObunsecureglob ; "ObUnsecureGlobalNames"
+INIT:0000000140AA9280                 dq offset ObpUnsecureGlobalNamesBuffer
+INIT:0000000140AA9288                 dq offset ObpUnsecureGlobalNamesLength
+INIT:0000000140AA9290                 align 20h
+INIT:0000000140AA92A0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA92A8                 dq offset aTimercheckflag ; "TimerCheckFlags"
+INIT:0000000140AA92B0                 dq offset KeTimerCheckFlags
+INIT:0000000140AA92B8                 dq 3 dup(0)
+INIT:0000000140AA92D0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AA92D8                 dq offset aAlwaystrackiob ; "AlwaysTrackIoBoosting"
+INIT:0000000140AA92E0                 dq offset PspAlwaysTrackIoBoosting
+INIT:0000000140AA92E8                 align 20h
+INIT:0000000140AA9300                 dq offset aSessionManager_4 ; "Session Manager\\Power"
+INIT:0000000140AA9308                 dq offset aSleepstudydisa ; "SleepStudyDisabled"
+INIT:0000000140AA9310                 dq offset PopSleepStudyDisabled
+INIT:0000000140AA9318                 dq 3 dup(0)
+INIT:0000000140AA9330                 dq offset aSessionManager_4 ; "Session Manager\\Power"
+INIT:0000000140AA9338                 dq offset aSleepstudydevi ; "SleepStudyDeviceAccountingLevel"
+INIT:0000000140AA9340                 dq offset PopSleepStudyDeviceAccountingLevel
+INIT:0000000140AA9348                 align 20h
+INIT:0000000140AA9360                 dq offset aSessionManager_4 ; "Session Manager\\Power"
+INIT:0000000140AA9368                 dq offset aWatchdogsleept ; "WatchdogSleepTimeout"
+INIT:0000000140AA9370                 dq offset PopWatchdogSleepTimeout
+INIT:0000000140AA9378                 dq 3 dup(0)
+INIT:0000000140AA9390                 dq offset aSessionManager_4 ; "Session Manager\\Power"
+INIT:0000000140AA9398                 dq offset aWatchdogresume ; "WatchdogResumeTimeout"
+INIT:0000000140AA93A0                 dq offset PopWatchdogResumeTimeout
+INIT:0000000140AA93A8                 align 20h
+INIT:0000000140AA93C0                 dq offset aSessionManager_4 ; "Session Manager\\Power"
+INIT:0000000140AA93C8                 dq offset aIdlescaninterv ; "IdleScanInterval"
+INIT:0000000140AA93D0                 dq offset PopIdleScanInterval
+INIT:0000000140AA93D8                 dq 3 dup(0)
+INIT:0000000140AA93F0                 dq offset aSessionManager_4 ; "Session Manager\\Power"
+INIT:0000000140AA93F8                 dq offset aFlushpolicy  ; "FlushPolicy"
+INIT:0000000140AA9400                 dq offset PopFlushPolicy
+INIT:0000000140AA9408                 align 20h
+INIT:0000000140AA9420                 dq offset aSessionManager_4 ; "Session Manager\\Power"
+INIT:0000000140AA9428                 dq offset aSkiptickoverri ; "SkipTickOverride"
+INIT:0000000140AA9430                 dq offset PopSkipTickPolicy
+INIT:0000000140AA9438                 dq 3 dup(0)
+INIT:0000000140AA9450                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9458                 dq offset aHibernateenabl_0 ; "HibernateEnabled"
+INIT:0000000140AA9460                 dq offset PopHiberEnabledReg
+INIT:0000000140AA9468                 align 20h
+INIT:0000000140AA9480                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9488                 dq offset aHibernateenabl_1 ; "HibernateEnabledDefault"
+INIT:0000000140AA9490                 dq offset PopHiberEnabledDefaultReg
+INIT:0000000140AA9498                 dq 3 dup(0)
+INIT:0000000140AA94B0                 dq offset aPowerForcehibe ; "Power\\ForceHibernateDisabled"
+INIT:0000000140AA94B8                 dq offset aPolicy_0     ; "Policy"
+INIT:0000000140AA94C0                 dq offset PopHiberForceDisabledReg
+INIT:0000000140AA94C8                 align 20h
+INIT:0000000140AA94E0                 dq offset aPowerForcehibe ; "Power\\ForceHibernateDisabled"
+INIT:0000000140AA94E8                 dq offset aGuardedhost_0 ; "GuardedHost"
+INIT:0000000140AA94F0                 dq offset unk_140CFBA3C
+INIT:0000000140AA94F8                 dq 3 dup(0)
+INIT:0000000140AA9510                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9518                 dq offset aHiberfilesizep_0 ; "HiberFileSizePercent"
+INIT:0000000140AA9520                 dq offset PopHiberFileSizePercent
+INIT:0000000140AA9528                 align 20h
+INIT:0000000140AA9540                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9548                 dq offset aHiberfiletype_0 ; "HiberFileType"
+INIT:0000000140AA9550                 dq offset PopHiberFileTypeReg
+INIT:0000000140AA9558                 dq 3 dup(0)
+INIT:0000000140AA9570                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9578                 dq offset aHiberfiletyped ; "HiberFileTypeDefault"
+INIT:0000000140AA9580                 dq offset PopHiberFileTypeDefaultReg
+INIT:0000000140AA9588                 align 20h
+INIT:0000000140AA95A0                 dq offset aPowerHiberfile ; "Power\\HiberFileBucket"
+INIT:0000000140AA95A8                 dq offset aPercent1gbfull ; "Percent1GBFull"
+INIT:0000000140AA95B0                 dq offset unk_140CFA4F0
+INIT:0000000140AA95B8                 dq 3 dup(0)
+INIT:0000000140AA95D0                 dq offset aPowerHiberfile ; "Power\\HiberFileBucket"
+INIT:0000000140AA95D8                 dq offset aPercent1gbredu ; "Percent1GBReduced"
+INIT:0000000140AA95E0                 dq offset unk_140CFA4EC
+INIT:0000000140AA95E8                 align 20h
+INIT:0000000140AA9600                 dq offset aPowerHiberfile ; "Power\\HiberFileBucket"
+INIT:0000000140AA9608                 dq offset aPercent2gbfull ; "Percent2GBFull"
+INIT:0000000140AA9610                 dq offset unk_140CFA508
+INIT:0000000140AA9618                 dq 3 dup(0)
+INIT:0000000140AA9630                 dq offset aPowerHiberfile ; "Power\\HiberFileBucket"
+INIT:0000000140AA9638                 dq offset aPercent2gbredu ; "Percent2GBReduced"
+INIT:0000000140AA9640                 dq offset unk_140CFA504
+INIT:0000000140AA9648                 align 20h
+INIT:0000000140AA9660                 dq offset aPowerHiberfile ; "Power\\HiberFileBucket"
+INIT:0000000140AA9668                 dq offset aPercent4gbfull ; "Percent4GBFull"
+INIT:0000000140AA9670                 dq offset unk_140CFA520
+INIT:0000000140AA9678                 dq 3 dup(0)
+INIT:0000000140AA9690                 dq offset aPowerHiberfile ; "Power\\HiberFileBucket"
+INIT:0000000140AA9698                 dq offset aPercent4gbredu ; "Percent4GBReduced"
+INIT:0000000140AA96A0                 dq offset unk_140CFA51C
+INIT:0000000140AA96A8                 align 20h
+INIT:0000000140AA96C0                 dq offset aPowerHiberfile ; "Power\\HiberFileBucket"
+INIT:0000000140AA96C8                 dq offset aPercent8gbfull ; "Percent8GBFull"
+INIT:0000000140AA96D0                 dq offset unk_140CFA538
+INIT:0000000140AA96D8                 dq 3 dup(0)
+INIT:0000000140AA96F0                 dq offset aPowerHiberfile ; "Power\\HiberFileBucket"
+INIT:0000000140AA96F8                 dq offset aPercent8gbredu ; "Percent8GBReduced"
+INIT:0000000140AA9700                 dq offset unk_140CFA534
+INIT:0000000140AA9708                 align 20h
+INIT:0000000140AA9720                 dq offset aPowerHiberfile ; "Power\\HiberFileBucket"
+INIT:0000000140AA9728                 dq offset aPercent16gbful ; "Percent16GBFull"
+INIT:0000000140AA9730                 dq offset unk_140CFA550
+INIT:0000000140AA9738                 dq 3 dup(0)
+INIT:0000000140AA9750                 dq offset aPowerHiberfile ; "Power\\HiberFileBucket"
+INIT:0000000140AA9758                 dq offset aPercent16gbred ; "Percent16GBReduced"
+INIT:0000000140AA9760                 dq offset unk_140CFA54C
+INIT:0000000140AA9768                 align 20h
+INIT:0000000140AA9780                 dq offset aPowerHiberfile ; "Power\\HiberFileBucket"
+INIT:0000000140AA9788                 dq offset aPercent32gbful ; "Percent32GBFull"
+INIT:0000000140AA9790                 dq offset unk_140CFA568
+INIT:0000000140AA9798                 dq 3 dup(0)
+INIT:0000000140AA97B0                 dq offset aPowerHiberfile ; "Power\\HiberFileBucket"
+INIT:0000000140AA97B8                 dq offset aPercent32gbred ; "Percent32GBReduced"
+INIT:0000000140AA97C0                 dq offset unk_140CFA564
+INIT:0000000140AA97C8                 align 20h
+INIT:0000000140AA97E0                 dq offset aPowerHiberfile ; "Power\\HiberFileBucket"
+INIT:0000000140AA97E8                 dq offset aPercentunlimit ; "PercentUnlimitedFull"
+INIT:0000000140AA97F0                 dq offset unk_140CFA580
+INIT:0000000140AA97F8                 dq 3 dup(0)
+INIT:0000000140AA9810                 dq offset aPowerHiberfile ; "Power\\HiberFileBucket"
+INIT:0000000140AA9818                 dq offset aPercentunlimit_0 ; "PercentUnlimitedReduced"
+INIT:0000000140AA9820                 dq offset unk_140CFA57C
+INIT:0000000140AA9828                 align 20h
+INIT:0000000140AA9840                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9848                 dq offset aHiberbootenabl_0 ; "HiberbootEnabled"
+INIT:0000000140AA9850                 dq offset PopHiberbootEnabledReg
+INIT:0000000140AA9858                 dq 3 dup(0)
+INIT:0000000140AA9870                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9878                 dq offset aHibernatecheck ; "HibernateChecksummingEnabled"
+INIT:0000000140AA9880                 dq offset PopHiberChecksummingEnabledReg
+INIT:0000000140AA9888                 align 20h
+INIT:0000000140AA98A0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA98A8                 dq offset aEnableminimalh ; "EnableMinimalHiberFile"
+INIT:0000000140AA98B0                 dq offset PopEnableMinimalHiberFile
+INIT:0000000140AA98B8                 dq 3 dup(0)
+INIT:0000000140AA98D0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA98D8                 dq offset aForceminimalhi ; "ForceMinimalHiberFile"
+INIT:0000000140AA98E0                 dq offset PopForceMinimalHiberFile
+INIT:0000000140AA98E8                 align 20h
+INIT:0000000140AA9900                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9908                 dq offset aThermalpolling ; "ThermalPollingMode"
+INIT:0000000140AA9910                 dq offset PopThermalPollingMode
+INIT:0000000140AA9918                 dq 3 dup(0)
+INIT:0000000140AA9930                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9938                 dq offset aThermaltelemet ; "ThermalTelemetryVerbosity"
+INIT:0000000140AA9940                 dq offset PopThermalTelemetryVerbosity
+INIT:0000000140AA9948                 align 20h
+INIT:0000000140AA9960                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9968                 dq offset aSmartuserprese ; "SmartUserPresenceGracePeriod"
+INIT:0000000140AA9970                 dq offset PopSmartUserPresenceGracePeriod
+INIT:0000000140AA9978                 dq 3 dup(0)
+INIT:0000000140AA9990                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9998                 dq offset aSmartuserprese_2 ; "SmartUserPresenceWakeOffset"
+INIT:0000000140AA99A0                 dq offset PopSmartUserPresenceWakeOffset
+INIT:0000000140AA99A8                 align 20h
+INIT:0000000140AA99C0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA99C8                 dq offset aSmartuserprese_1 ; "SmartUserPresenceCheckTimeout"
+INIT:0000000140AA99D0                 dq offset PopSmartUserPresenceCheckTimeout
+INIT:0000000140AA99D8                 dq 3 dup(0)
+INIT:0000000140AA99F0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA99F8                 dq offset aSmartuserprese_0 ; "SmartUserPresenceAction"
+INIT:0000000140AA9A00                 dq offset PopSmartUserPresenceAction
+INIT:0000000140AA9A08                 align 20h
+INIT:0000000140AA9A20                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9A28                 dq offset aDozedeferralma ; "DozeDeferralMaxSeconds"
+INIT:0000000140AA9A30                 dq offset PopDozeDeferralMaxSeconds
+INIT:0000000140AA9A38                 dq 3 dup(0)
+INIT:0000000140AA9A50                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9A58                 dq offset aDozedeferralch ; "DozeDeferralChecksToIgnore"
+INIT:0000000140AA9A60                 dq offset PopDozeDeferralChecksToIgnore
+INIT:0000000140AA9A68                 align 20h
+INIT:0000000140AA9A80                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9A88                 dq offset aWin32kcalloutw ; "Win32kCalloutWatchdogTimeoutSeconds"
+INIT:0000000140AA9A90                 dq offset PopWin32kCalloutWatchdogTimeoutSeconds
+INIT:0000000140AA9A98                 dq 3 dup(0)
+INIT:0000000140AA9AB0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9AB8                 dq offset aPdcidlephasede ; "PdcIdlePhaseDefaultWatchdogTimeoutSecon"...
+INIT:0000000140AA9AC0                 dq offset PopPdcIdlePhaseDefaultWatchdogTimeoutSeconds
+INIT:0000000140AA9AC8                 align 20h
+INIT:0000000140AA9AE0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9AE8                 dq offset aFxaccountingte ; "FxAccountingTelemetryDisabled"
+INIT:0000000140AA9AF0                 dq offset PopDiagFxAccountingTelemetryDisabled
+INIT:0000000140AA9AF8                 dq 3 dup(0)
+INIT:0000000140AA9B10                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9B18                 dq offset aPoweractionsus ; "PowerActionSuspendWatchdogTimeoutDefaul"...
+INIT:0000000140AA9B20                 dq offset PopPowerActionTransitioningWatchdogTimeoutDefault
+INIT:0000000140AA9B28                 align 20h
+INIT:0000000140AA9B40                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9B48                 dq offset aPoweractionres_0 ; "PowerActionResumeWatchdogTimeoutDefault"
+INIT:0000000140AA9B50                 dq offset PopPowerActionResumingWatchdogTimeoutDefault
+INIT:0000000140AA9B58                 dq 3 dup(0)
+INIT:0000000140AA9B70                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9B78                 dq offset aPresleepnotifi ; "PreSleepNotificationSeconds"
+INIT:0000000140AA9B80                 dq offset PopPreSleepNotificationSeconds
+INIT:0000000140AA9B88                 align 20h
+INIT:0000000140AA9BA0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9BA8                 dq offset aMsdisabled   ; "MSDisabled"
+INIT:0000000140AA9BB0                 dq offset PopModernStandbyDisabled
+INIT:0000000140AA9BB8                 dq 3 dup(0)
+INIT:0000000140AA9BD0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9BD8                 dq offset aPlatformroleov ; "PlatformRoleOverride"
+INIT:0000000140AA9BE0                 dq offset PopPlatformRoleOverride
+INIT:0000000140AA9BE8                 align 20h
+INIT:0000000140AA9C00                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9C08                 dq offset aPlatformaoacov ; "PlatformAoAcOverride"
+INIT:0000000140AA9C10                 dq offset PopPlatformAoAcOverride
+INIT:0000000140AA9C18                 dq 3 dup(0)
+INIT:0000000140AA9C30                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9C38                 dq offset aPerfboostatgua ; "PerfBoostAtGuaranteed"
+INIT:0000000140AA9C40                 dq offset PpmPerfBoostAtGuaranteed
+INIT:0000000140AA9C48                 align 20h
+INIT:0000000140AA9C60                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9C68                 dq offset aIpilastclockow ; "IpiLastClockOwnerDisable"
+INIT:0000000140AA9C70                 dq offset PpmIpiLastClockOwnerDisable
+INIT:0000000140AA9C78                 dq 3 dup(0)
+INIT:0000000140AA9C90                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9C98                 dq offset aMfbufferingthr ; "MfBufferingThreshold"
+INIT:0000000140AA9CA0                 dq offset PpmMfBufferingThreshold
+INIT:0000000140AA9CA8                 align 20h
+INIT:0000000140AA9CC0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9CC8                 dq offset aMfoverridesdis ; "MfOverridesDisabled"
+INIT:0000000140AA9CD0                 dq offset PpmMfOverridesDisabled
+INIT:0000000140AA9CD8                 dq 3 dup(0)
+INIT:0000000140AA9CF0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9CF8                 dq offset aLatencytoleran_0 ; "LatencyToleranceDefault"
+INIT:0000000140AA9D00                 dq offset PpmLatencyToleranceLimit
+INIT:0000000140AA9D08                 align 20h
+INIT:0000000140AA9D20                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9D28                 dq offset aLatencytoleran ; "LatencyToleranceVSyncEnabled"
+INIT:0000000140AA9D30                 dq offset dword_140CFA314
+INIT:0000000140AA9D38                 dq 3 dup(0)
+INIT:0000000140AA9D50                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9D58                 dq offset aLatencytoleran_2 ; "LatencyToleranceFSVP"
+INIT:0000000140AA9D60                 dq offset dword_140CFA318
+INIT:0000000140AA9D68                 align 20h
+INIT:0000000140AA9D80                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9D88                 dq offset aLatencytoleran_1 ; "LatencyToleranceIdleResiliency"
+INIT:0000000140AA9D90                 dq offset dword_140CFA31C
+INIT:0000000140AA9D98                 dq 3 dup(0)
+INIT:0000000140AA9DB0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9DB8                 dq offset aPerfidealaggre ; "PerfIdealAggressiveIncreasePolicyThresh"...
+INIT:0000000140AA9DC0                 dq offset PpmPerfIdealAggressiveIncreaseThreshold
+INIT:0000000140AA9DC8                 align 20h
+INIT:0000000140AA9DE0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9DE8                 dq offset aPerfsinglestep ; "PerfSingleStepSize"
+INIT:0000000140AA9DF0                 dq offset PpmPerfSingleStepSize
+INIT:0000000140AA9DF8                 dq 3 dup(0)
+INIT:0000000140AA9E10                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9E18                 dq offset aPerfcalculatea ; "PerfCalculateActualUtilization"
+INIT:0000000140AA9E20                 dq offset PpmPerfCalculateActualUtilization
+INIT:0000000140AA9E28                 align 20h
+INIT:0000000140AA9E40                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9E48                 dq offset aPerfartificial ; "PerfArtificialDomain"
+INIT:0000000140AA9E50                 dq offset PpmPerfArtificialDomainSetting
+INIT:0000000140AA9E58                 dq 3 dup(0)
+INIT:0000000140AA9E70                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9E78                 dq offset aParkwithcoregr ; "ParkWithCoreGranularity"
+INIT:0000000140AA9E80                 dq offset PpmParkUseCoreGranularity
+INIT:0000000140AA9E88                 align 20h
+INIT:0000000140AA9EA0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9EA8                 dq offset aMultiparkgranu ; "MultiparkGranularity"
+INIT:0000000140AA9EB0                 dq offset PpmParkMultiparkGranularity
+INIT:0000000140AA9EB8                 dq 3 dup(0)
+INIT:0000000140AA9ED0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9ED8                 dq offset aClass1initialu ; "Class1InitialUnparkCount"
+INIT:0000000140AA9EE0                 dq offset PpmParkInitialClass1UnParkCount
+INIT:0000000140AA9EE8                 align 20h
+INIT:0000000140AA9F00                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9F08                 dq offset aHighperfdurati ; "HighPerfDurationBoot"
+INIT:0000000140AA9F10                 dq offset PpmHighPerfDuration
+INIT:0000000140AA9F18                 dq 3 dup(0)
+INIT:0000000140AA9F30                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9F38                 dq offset aHighperfdurati_0 ; "HighPerfDurationCSExit"
+INIT:0000000140AA9F40                 dq offset unk_140CFA2EC
+INIT:0000000140AA9F48                 align 20h
+INIT:0000000140AA9F60                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9F68                 dq offset aHighperfdurati_1 ; "HighPerfDurationSxExit"
+INIT:0000000140AA9F70                 dq offset unk_140CFA2F0
+INIT:0000000140AA9F78                 dq 3 dup(0)
+INIT:0000000140AA9F90                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9F98                 dq offset aIdledurationex ; "IdleDurationExpirationTimeout"
+INIT:0000000140AA9FA0                 dq offset PpmIdleDurationExpirationTimeoutMs
+INIT:0000000140AA9FA8                 align 20h
+INIT:0000000140AA9FC0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9FC8                 dq offset aDisableidlesta ; "DisableIdleStatesAtBoot"
+INIT:0000000140AA9FD0                 dq offset PpmIdleDisableStatesAtBoot
+INIT:0000000140AA9FD8                 dq 3 dup(0)
+INIT:0000000140AA9FF0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AA9FF8                 dq offset aHeterogeneousp ; "HeterogeneousPpmImplementation"
+INIT:0000000140AAA000                 dq offset PpmHeteroImplementationGeneration
+INIT:0000000140AAA008                 align 20h
+INIT:0000000140AAA020                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA028                 dq offset aBootheteropoli ; "BootHeteroPolicyOverride"
+INIT:0000000140AAA030                 dq offset PpmPerfBootHeteroPolicyOverrideEnabled
+INIT:0000000140AAA038                 dq 3 dup(0)
+INIT:0000000140AAA050                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA058                 dq offset aEnforcedisconn ; "EnforceDisconnectedStandby"
+INIT:0000000140AAA060                 dq offset PopEnforceDisconnectedStandby
+INIT:0000000140AAA068                 align 20h
+INIT:0000000140AAA080                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA088                 dq offset aUserbatterydis ; "UserBatteryDischargeEstimator"
+INIT:0000000140AAA090                 dq offset PopDisableBatteryDischargeEstimator
+INIT:0000000140AAA098                 dq 3 dup(0)
+INIT:0000000140AAA0B0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA0B8                 dq offset aUserbatterycha ; "UserBatteryChargeEstimator"
+INIT:0000000140AAA0C0                 dq offset PopUserBatteryChargingEstimator
+INIT:0000000140AAA0C8                 align 20h
+INIT:0000000140AAA0E0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA0E8                 dq offset aStandbyconnect ; "StandbyConnectivityGracePeriod"
+INIT:0000000140AAA0F0                 dq offset PopStandbyConnectivityGracePeriod
+INIT:0000000140AAA0F8                 dq 3 dup(0)
+INIT:0000000140AAA110                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA118                 dq offset aEventprocessor ; "EventProcessorEnabled"
+INIT:0000000140AAA120                 dq offset PopEventProcessorEnabled
+INIT:0000000140AAA128                 align 20h
+INIT:0000000140AAA140                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA148                 dq offset aPdconewayentry ; "PdcOneWayEntry"
+INIT:0000000140AAA150                 dq offset PopPowerAggregatorOneWayEntry
+INIT:0000000140AAA158                 dq 3 dup(0)
+INIT:0000000140AAA170                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA178                 dq offset aPromotehiberna ; "PromoteHibernateToShutdown"
+INIT:0000000140AAA180                 dq offset PopPromoteHibernateToShutdown
+INIT:0000000140AAA188                 align 20h
+INIT:0000000140AAA1A0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA1A8                 dq offset aCoalescingtime ; "CoalescingTimerInterval"
+INIT:0000000140AAA1B0                 dq offset PopCoalescingTimerInterval
+INIT:0000000140AAA1B8                 dq 3 dup(0)
+INIT:0000000140AAA1D0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA1D8                 dq offset aCoalescingflus ; "CoalescingFlushInterval"
+INIT:0000000140AAA1E0                 dq offset PopCoalescingFlushInterval
+INIT:0000000140AAA1E8                 align 20h
+INIT:0000000140AAA200                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA208                 dq offset aEnableinputsup ; "EnableInputSuppression"
+INIT:0000000140AAA210                 dq offset PopEnableInputSuppressionOverride
+INIT:0000000140AAA218                 dq 3 dup(0)
+INIT:0000000140AAA230                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA238                 dq offset aIgnorelidstate ; "IgnoreLidStateForInputSuppression"
+INIT:0000000140AAA240                 dq offset PopLidStateForInputSuppressionOverride
+INIT:0000000140AAA248                 align 20h
+INIT:0000000140AAA260                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA268                 dq offset aActiveidletime ; "ActiveIdleTimeout"
+INIT:0000000140AAA270                 dq offset PopFxActiveIdleTimeout
+INIT:0000000140AAA278                 dq 3 dup(0)
+INIT:0000000140AAA290                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA298                 dq offset aActiveidlethre ; "ActiveIdleThreshold"
+INIT:0000000140AAA2A0                 dq offset PopFxActiveIdleThreshold
+INIT:0000000140AAA2A8                 align 20h
+INIT:0000000140AAA2C0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA2C8                 dq offset aActiveidleleve ; "ActiveIdleLevel"
+INIT:0000000140AAA2D0                 dq offset PopFxActiveIdleLevel
+INIT:0000000140AAA2D8                 dq 3 dup(0)
+INIT:0000000140AAA2F0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA2F8                 dq offset aDirectedfxdefa ; "DirectedFxDefaultTimeout"
+INIT:0000000140AAA300                 dq offset PopFxDirectedFxDefaultTimeout
+INIT:0000000140AAA308                 align 20h
+INIT:0000000140AAA320                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA328                 dq offset aIdlestatetimeo ; "IdleStateTimeout"
+INIT:0000000140AAA330                 dq offset PopPepIdleStateTimeout
+INIT:0000000140AAA338                 dq 3 dup(0)
+INIT:0000000140AAA350                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA358                 dq offset aWatchdogworkor ; "WatchdogWorkOrderTimeout"
+INIT:0000000140AAA360                 dq offset PopFxWatchdogWorkOrderTimeout
+INIT:0000000140AAA368                 align 20h
+INIT:0000000140AAA380                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA388                 dq offset aDripscallbacki ; "DripsCallbackInterval"
+INIT:0000000140AAA390                 dq offset PopDripsCallbackInterval
+INIT:0000000140AAA398                 dq 3 dup(0)
+INIT:0000000140AAA3B0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA3B8                 dq offset aDripswatchdogd ; "DripsWatchdogDebounceInterval"
+INIT:0000000140AAA3C0                 dq offset PopDripsWatchdogDebounceInterval
+INIT:0000000140AAA3C8                 align 20h
+INIT:0000000140AAA3E0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA3E8                 dq offset aDripswatchdogt ; "DripsWatchdogTimeout"
+INIT:0000000140AAA3F0                 dq offset PopDripsWatchdogTimeout
+INIT:0000000140AAA3F8                 dq 3 dup(0)
+INIT:0000000140AAA410                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA418                 dq offset aDripswatchdoga ; "DripsWatchdogAction"
+INIT:0000000140AAA420                 dq offset PopDripsWatchdogAction
+INIT:0000000140AAA428                 align 20h
+INIT:0000000140AAA440                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA448                 dq offset aDirecteddripso ; "DirectedDripsOverride"
+INIT:0000000140AAA450                 dq offset PopDirectedDripsOverride
+INIT:0000000140AAA458                 dq 3 dup(0)
+INIT:0000000140AAA470                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA478                 dq offset aDirecteddripst ; "DirectedDripsTimeout"
+INIT:0000000140AAA480                 dq offset PopDirectedDripsTimeout
+INIT:0000000140AAA488                 align 20h
+INIT:0000000140AAA4A0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA4A8                 dq offset aDirecteddripsd_0 ; "DirectedDripsDebounceInterval"
+INIT:0000000140AAA4B0                 dq offset PopDirectedDripsDebounceInterval
+INIT:0000000140AAA4B8                 dq 3 dup(0)
+INIT:0000000140AAA4D0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA4D8                 dq offset aDirecteddripsa_0 ; "DirectedDripsAction"
+INIT:0000000140AAA4E0                 dq offset PopDirectedDripsAction
+INIT:0000000140AAA4E8                 align 20h
+INIT:0000000140AAA500                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA508                 dq offset aDirecteddripsw ; "DirectedDripsWaitWakeTimeout"
+INIT:0000000140AAA510                 dq offset PopDirectedDripsWaitWakeTimeoutSeconds
+INIT:0000000140AAA518                 dq 3 dup(0)
+INIT:0000000140AAA530                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA538                 dq offset aDirecteddripss ; "DirectedDripsSurprisePowerOnTimeout"
+INIT:0000000140AAA540                 dq offset PopDirectedDripsSurprisePowerOnTimeoutSeconds
+INIT:0000000140AAA548                 align 20h
+INIT:0000000140AAA560                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA568                 dq offset aDirecteddripsd ; "DirectedDripsDfxEnforcementPolicy"
+INIT:0000000140AAA570                 dq offset PopDirectedDripsDfxEnforcementPolicy
+INIT:0000000140AAA578                 dq 3 dup(0)
+INIT:0000000140AAA590                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA598                 dq offset aDisablevsyncla ; "DisableVsyncLatencyUpdate"
+INIT:0000000140AAA5A0                 dq offset PpmDisableVsyncLatencyUpdate
+INIT:0000000140AAA5A8                 align 20h
+INIT:0000000140AAA5C0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA5C8                 dq offset aExitlatencyche ; "ExitLatencyCheckEnabled"
+INIT:0000000140AAA5D0                 dq offset PpmExitLatencyCheckEnabled
+INIT:0000000140AAA5D8                 dq 3 dup(0)
+INIT:0000000140AAA5F0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA5F8                 dq offset aEnergyestimati ; "EnergyEstimationEnabled"
+INIT:0000000140AAA600                 dq offset PopEnergyEstimationEnabled
+INIT:0000000140AAA608                 align 20h
+INIT:0000000140AAA620                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA628                 dq offset aCheckpowersour ; "CheckPowerSourceAfterRtcWakeTime"
+INIT:0000000140AAA630                 dq offset PopCheckPowerSourceAfterRtcWakeTime
+INIT:0000000140AAA638                 dq 3 dup(0)
+INIT:0000000140AAA650                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA658                 dq offset aDripsswhwdiver_0 ; "DripsSwHwDivergenceThreshold"
+INIT:0000000140AAA660                 dq offset PopDripsSwHwDivergenceThreshold
+INIT:0000000140AAA668                 align 20h
+INIT:0000000140AAA680                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA688                 dq offset aDripsswhwdiver ; "DripsSwHwDivergenceEnableLiveDump"
+INIT:0000000140AAA690                 dq offset PopDripsSwHwDivergenceEnableLiveDump
+INIT:0000000140AAA698                 dq 3 dup(0)
+INIT:0000000140AAA6B0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA6B8                 dq offset aIgnorecscompli ; "IgnoreCsComplianceCheck"
+INIT:0000000140AAA6C0                 dq offset PopIgnoreCsComplianceCheck
+INIT:0000000140AAA6C8                 align 20h
+INIT:0000000140AAA6E0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA6E8                 dq offset aPerfqueryondev ; "PerfQueryOnDevicePowerChanges"
+INIT:0000000140AAA6F0                 dq offset PopFxPerfQueryOnDevicePowerChanges
+INIT:0000000140AAA6F8                 dq 3 dup(0)
+INIT:0000000140AAA710                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA718                 dq offset aEnforceconsole ; "EnforceConsoleLockScreenTimeout"
+INIT:0000000140AAA720                 dq offset PopEnforceConsoleLockScreenTimeout
+INIT:0000000140AAA728                 align 20h
+INIT:0000000140AAA740                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA748                 dq offset aDeepiocoalesci ; "DeepIoCoalescingEnabled"
+INIT:0000000140AAA750                 dq offset PopDeepIoCoalescingEnabled
+INIT:0000000140AAA758                 dq 3 dup(0)
+INIT:0000000140AAA770                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA778                 dq offset aAllowsystemreq ; "AllowSystemRequiredPowerRequests"
+INIT:0000000140AAA780                 dq offset PopPowerRequestConvertSystemToExecution
+INIT:0000000140AAA788                 align 20h
+INIT:0000000140AAA7A0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA7A8                 dq offset aAllowaudiotoen ; "AllowAudioToEnableExecutionRequiredPowe"...
+INIT:0000000140AAA7B0                 dq offset PopPowerRequestActiveAudioEnablesExecutionRequired
+INIT:0000000140AAA7B8                 dq 3 dup(0)
+INIT:0000000140AAA7D0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA7D8                 dq offset aTtmenabled   ; "TtmEnabled"
+INIT:0000000140AAA7E0                 dq offset TtmpEnabled
+INIT:0000000140AAA7E8                 align 20h
+INIT:0000000140AAA800                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA808                 dq offset aProximityescap ; "ProximityEscapeMsec"
+INIT:0000000140AAA810                 dq offset TtmpProximityEscapeMsec
+INIT:0000000140AAA818                 dq 3 dup(0)
+INIT:0000000140AAA830                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA838                 dq offset aTimerrebasethr ; "TimerRebaseThresholdOnDripsExit"
+INIT:0000000140AAA840                 dq offset KiTimerRebaseThresholdOnDripsExit
+INIT:0000000140AAA848                 align 20h
+INIT:0000000140AAA860                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA868                 dq offset aFxruntimelognu ; "FxRuntimeLogNumberEntries"
+INIT:0000000140AAA870                 dq offset PopFxRuntimeLogNumberEntries
+INIT:0000000140AAA878                 dq 3 dup(0)
+INIT:0000000140AAA890                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA898                 dq offset aCheckpointsyst_0 ; "CheckpointSystemSleep"
+INIT:0000000140AAA8A0                 dq offset PopCheckpointSystemSleepEnabledReg
+INIT:0000000140AAA8A8                 align 20h
+INIT:0000000140AAA8C0                 dq offset aPowerModernsle ; "Power\\ModernSleep"
+INIT:0000000140AAA8C8                 dq offset aEnabledactions ; "EnabledActions"
+INIT:0000000140AAA8D0                 dq offset PopAggressiveStandbyActionsRegValue
+INIT:0000000140AAA8D8                 dq 3 dup(0)
+INIT:0000000140AAA8F0                 dq offset aPowerModernsle ; "Power\\ModernSleep"
+INIT:0000000140AAA8F8                 dq offset aEnabledsnetref ; "EnableDsNetRefresh"
+INIT:0000000140AAA900                 dq offset PopEnableDsNetRefresh
+INIT:0000000140AAA908                 align 20h
+INIT:0000000140AAA920                 dq offset aPowerPowerthro ; "Power\\PowerThrottling"
+INIT:0000000140AAA928                 dq offset aPowerthrottlin ; "PowerThrottlingOff"
+INIT:0000000140AAA930                 dq offset PpmPerfQosGroupPolicyDisable
+INIT:0000000140AAA938                 dq 3 dup(0)
+INIT:0000000140AAA950                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA958                 dq offset aIdleprocessors ; "IdleProcessorsRequireQosManagement"
+INIT:0000000140AAA960                 dq offset PpmPerfQosManageIdleProcessors
+INIT:0000000140AAA968                 align 20h
+INIT:0000000140AAA980                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA988                 dq offset aCheckpointsyst ; "CheckpointSystemSleepSimulateFlags"
+INIT:0000000140AAA990                 dq offset PopCheckpointSystemSleepSimulateFlags
+INIT:0000000140AAA998                 dq 3 dup(0)
+INIT:0000000140AAA9B0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA9B8                 dq offset aSkiphibernatem ; "SkipHibernateMemoryMapValidation"
+INIT:0000000140AAA9C0                 dq offset PopEnableHibernateMemoryMapValidationOverride
+INIT:0000000140AAA9C8                 align 20h
+INIT:0000000140AAA9E0                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAA9E8                 dq offset aPofxsystemirpw ; "PoFxSystemIrpWaitForReportDevicePowered"
+INIT:0000000140AAA9F0                 dq offset PopPoFxSystemIrpWaitForReportDevicePoweredReg
+INIT:0000000140AAA9F8                 dq 3 dup(0)
+INIT:0000000140AAAA10                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAAA18                 dq offset aDisabledisplay ; "DisableDisplayBurstOnPowerSourceChange"
+INIT:0000000140AAAA20                 dq offset PopDisableDisplayBurstOnPowerSourceChange
+INIT:0000000140AAAA28                 align 20h
+INIT:0000000140AAAA40                 dq offset aPower_2      ; "Power"
+INIT:0000000140AAAA48                 dq offset aDisableinboxpe ; "DisableInboxPepGeneratedConstraints"
+INIT:0000000140AAAA50                 dq offset PopDisableInboxPepGeneratedConstraintsOverride
+INIT:0000000140AAAA58                 dq 3 dup(0)
+INIT:0000000140AAAA70                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AAAA78                 dq offset aObcaseinsensit ; "ObCaseInsensitive"
+INIT:0000000140AAAA80                 dq offset ObpCaseInsensitive
+INIT:0000000140AAAA88                 dq 3 dup(0)
+INIT:0000000140AAAAA0                 dq offset aSessionManager_13 ; "Session Manager\\I/O System"
+INIT:0000000140AAAAA8                 dq offset aLargeirpstackl ; "LargeIrpStackLocations"
+INIT:0000000140AAAAB0                 dq offset IopLargeIrpStackLocations
+INIT:0000000140AAAAB8                 dq 3 dup(0)
+INIT:0000000140AAAAD0                 dq offset aSessionManager_13 ; "Session Manager\\I/O System"
+INIT:0000000140AAAAD8                 dq offset aMediumirpstack ; "MediumIrpStackLocations"
+INIT:0000000140AAAAE0                 dq offset IopMediumIrpStackLocations
+INIT:0000000140AAAAE8                 dq 3 dup(0)
+INIT:0000000140AAAB00                 dq offset aSessionManager_13 ; "Session Manager\\I/O System"
+INIT:0000000140AAAB08                 dq offset aIoblocklegacyf ; "IoBlockLegacyFsFilters"
+INIT:0000000140AAAB10                 dq offset IopBlockLegacyFsFilters
+INIT:0000000140AAAB18                 dq 3 dup(0)
+INIT:0000000140AAAB30                 dq offset aSessionManager_13 ; "Session Manager\\I/O System"
+INIT:0000000140AAAB38                 dq offset aIocaseinsensit ; "IoCaseInsensitive"
+INIT:0000000140AAAB40                 dq offset IopCaseInsensitive
+INIT:0000000140AAAB48                 dq 3 dup(0)
+INIT:0000000140AAAB60                 dq offset aSessionManager_13 ; "Session Manager\\I/O System"
+INIT:0000000140AAAB68                 dq offset aIofailzeroacce ; "IoFailZeroAccessCreate"
+INIT:0000000140AAAB70                 dq offset IopFailZeroAccessCreate
+INIT:0000000140AAAB78                 dq 3 dup(0)
+INIT:0000000140AAAB90                 dq offset aSessionManager_13 ; "Session Manager\\I/O System"
+INIT:0000000140AAAB98                 dq offset aIoenablesessio ; "IoEnableSessionZeroAccessCheck"
+INIT:0000000140AAABA0                 dq offset IopSessionZeroAccessCheckEnabled
+INIT:0000000140AAABA8                 dq 3 dup(0)
+INIT:0000000140AAABC0                 dq offset aSessionManager_13 ; "Session Manager\\I/O System"
+INIT:0000000140AAABC8                 dq offset aIoallowloadcra ; "IoAllowLoadCrashDumpDriver"
+INIT:0000000140AAABD0                 dq offset IopAllowLoadCrashDumpDriver
+INIT:0000000140AAABD8                 dq 3 dup(0)
+INIT:0000000140AAABF0                 dq offset aSessionManager_13 ; "Session Manager\\I/O System"
+INIT:0000000140AAABF8                 dq offset aIoirpcompletio ; "IoIrpCompletionTimeoutInSeconds"
+INIT:0000000140AAAC00                 dq offset IopIrpCompletionTimeoutInSeconds
+INIT:0000000140AAAC08                 align 20h
+INIT:0000000140AAAC20                 dq offset aQos          ; "QoS"
+INIT:0000000140AAAC28                 dq offset aStoragebaseios ; "StorageBaseIOSize"
+INIT:0000000140AAAC30                 dq offset IopDiskIoAttributionBaseIoSize
+INIT:0000000140AAAC38                 dq 3 dup(0)
+INIT:0000000140AAAC50                 dq offset aSessionManager_13 ; "Session Manager\\I/O System"
+INIT:0000000140AAAC58                 dq offset aDisablediskcou ; "DisableDiskCounters"
+INIT:0000000140AAAC60                 dq offset PsDisableDiskCounters
+INIT:0000000140AAAC68                 dq 3 dup(0)
+INIT:0000000140AAAC80                 dq offset aSessionManager_13 ; "Session Manager\\I/O System"
+INIT:0000000140AAAC88                 dq offset aDisablebuffere ; "DisableBufferedIoInit"
+INIT:0000000140AAAC90                 dq offset IopDisableBufferedIoInit
+INIT:0000000140AAAC98                 dq 3 dup(0)
+INIT:0000000140AAACB0                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAACB8                 dq offset aResourcetimeou_0 ; "ResourceTimeoutCount"
+INIT:0000000140AAACC0                 dq offset ExResourceTimeoutCount
+INIT:0000000140AAACC8                 align 20h
+INIT:0000000140AAACE0                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAACE8                 dq offset aResourcecheckf ; "ResourceCheckFlags"
+INIT:0000000140AAACF0                 dq offset ExResourceCheckFlags
+INIT:0000000140AAACF8                 dq 3 dup(0)
+INIT:0000000140AAAD10                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAAD18                 dq offset aResourceenforc ; "ResourceEnforceOwnerTransfer"
+INIT:0000000140AAAD20                 dq offset ExpResourceEnforceOwnerTransfer
+INIT:0000000140AAAD28                 align 20h
+INIT:0000000140AAAD40                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAAD48                 dq offset aCriticalsectio ; "CriticalSectionTimeout"
+INIT:0000000140AAAD50                 dq offset dword_140CFA194
+INIT:0000000140AAAD58                 dq 3 dup(0)
+INIT:0000000140AAAD70                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAAD78                 dq offset aHeapsegmentres ; "HeapSegmentReserve"
+INIT:0000000140AAAD80                 dq offset qword_140CFA1B8
+INIT:0000000140AAAD88                 align 20h
+INIT:0000000140AAADA0                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAADA8                 dq offset aHeapsegmentcom ; "HeapSegmentCommit"
+INIT:0000000140AAADB0                 dq offset qword_140CFA1B0
+INIT:0000000140AAADB8                 dq 3 dup(0)
+INIT:0000000140AAADD0                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAADD8                 dq offset aHeapdecommitto ; "HeapDeCommitTotalFreeThreshold"
+INIT:0000000140AAADE0                 dq offset qword_140CFA1A8
+INIT:0000000140AAADE8                 align 20h
+INIT:0000000140AAAE00                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAAE08                 dq offset aHeapdecommitfr ; "HeapDeCommitFreeBlockThreshold"
+INIT:0000000140AAAE10                 dq offset qword_140CFA1A0
+INIT:0000000140AAAE18                 dq 3 dup(0)
+INIT:0000000140AAAE30                 dq offset aProductoptions_1 ; "ProductOptions"
+INIT:0000000140AAAE38                 dq offset aProducttype_0 ; "ProductType"
+INIT:0000000140AAAE40                 dq offset dword_140CFA19C
+INIT:0000000140AAAE48                 dq 3 dup(0)
+INIT:0000000140AAAE60                 dq offset aTerminalServer ; "Terminal Server"
+INIT:0000000140AAAE68                 dq offset aTsappcompat_0 ; "TSAppCompat"
+INIT:0000000140AAAE70                 dq offset ExpMultiUserTS
+INIT:0000000140AAAE78                 dq 3 dup(0)
+INIT:0000000140AAAE90                 dq offset aProductoptions_1 ; "ProductOptions"
+INIT:0000000140AAAE98                 dq offset aProductsuite_0 ; "ProductSuite"
+INIT:0000000140AAAEA0                 dq offset CmSuiteBuffer
+INIT:0000000140AAAEA8                 dq offset CmSuiteBufferLength
+INIT:0000000140AAAEB0                 dq offset CmSuiteBufferType
+INIT:0000000140AAAEB8                 align 20h
+INIT:0000000140AAAEC0                 dq offset aProductoptions_1 ; "ProductOptions"
+INIT:0000000140AAAEC8                 dq offset aProductpolicy_2 ; "ProductPolicy"
+INIT:0000000140AAAED0                 dq offset ExpHostBootLicensingData
+INIT:0000000140AAAED8                 dq offset qword_140D6AE50
+INIT:0000000140AAAEE0                 dq offset qword_140D6AE50+4
+INIT:0000000140AAAEE8                 align 10h
+INIT:0000000140AAAEF0                 dq offset aWindows      ; "Windows"
+INIT:0000000140AAAEF8                 dq offset aCsdversion_0 ; "CSDVersion"
+INIT:0000000140AAAF00                 dq offset CmNtCSDVersion
+INIT:0000000140AAAF08                 align 20h
+INIT:0000000140AAAF20                 dq offset aWindows      ; "Windows"
+INIT:0000000140AAAF28                 dq offset aCsdreleasetype ; "CSDReleaseType"
+INIT:0000000140AAAF30                 dq offset CmNtCSDReleaseType
+INIT:0000000140AAAF38                 dq 3 dup(0)
+INIT:0000000140AAAF50                 dq offset aWindows      ; "Windows"
+INIT:0000000140AAAF58                 dq offset aCsdbuildnumber_0 ; "CSDBuildNumber"
+INIT:0000000140AAAF60                 dq offset CmNtSpBuildNumber
+INIT:0000000140AAAF68                 align 20h
+INIT:0000000140AAAF80                 dq offset aNlsLanguage  ; "Nls\\Language"
+INIT:0000000140AAAF88                 dq offset aDefault_4    ; "Default"
+INIT:0000000140AAAF90                 dq offset CmDefaultLanguageId
+INIT:0000000140AAAF98                 dq offset CmDefaultLanguageIdLength
+INIT:0000000140AAAFA0                 dq offset CmDefaultLanguageIdType
+INIT:0000000140AAAFA8                 dq 1
+INIT:0000000140AAAFB0                 dq offset aNlsLanguage  ; "Nls\\Language"
+INIT:0000000140AAAFB8                 dq offset aInstalllanguag_0 ; "InstallLanguage"
+INIT:0000000140AAAFC0                 dq offset CmInstallUILanguageId
+INIT:0000000140AAAFC8                 dq offset CmInstallUILanguageIdLength
+INIT:0000000140AAAFD0                 dq offset CmInstallUILanguageIdType
+INIT:0000000140AAAFD8                 dq 1
+INIT:0000000140AAAFE0                 dq offset dword_140AB228C
+INIT:0000000140AAAFE8                 dq offset aRegistrysizeli ; "RegistrySizeLimit"
+INIT:0000000140AAAFF0                 dq offset CmRegistrySizeLimit
+INIT:0000000140AAAFF8                 dq offset CmRegistrySizeLimitLength
+INIT:0000000140AAB000                 dq offset CmRegistrySizeLimitType
+INIT:0000000140AAB008                 align 10h
+INIT:0000000140AAB010                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB018                 dq offset aFastboot     ; "FastBoot"
+INIT:0000000140AAB020                 dq offset CmFastBoot
+INIT:0000000140AAB028                 align 20h
+INIT:0000000140AAB040                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB048                 dq offset aSelfhealingena ; "SelfHealingEnabled"
+INIT:0000000140AAB050                 dq offset CmSelfHeal
+INIT:0000000140AAB058                 dq 3 dup(0)
+INIT:0000000140AAB070                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB078                 dq offset aRegistrylazyfl ; "RegistryLazyFlushInterval"
+INIT:0000000140AAB080                 dq offset CmpLazyFlushIntervalInSeconds
+INIT:0000000140AAB088                 align 20h
+INIT:0000000140AAB0A0                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB0A8                 dq offset aRegistrylazyre ; "RegistryLazyReconcileInterval"
+INIT:0000000140AAB0B0                 dq offset CmpLazyReconcileIntervalInSeconds
+INIT:0000000140AAB0B8                 dq 3 dup(0)
+INIT:0000000140AAB0D0                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB0D8                 dq offset aRegistrylazylo ; "RegistryLazyLocalizeInterval"
+INIT:0000000140AAB0E0                 dq offset CmpLazyLocalizeIntervalInSeconds
+INIT:0000000140AAB0E8                 align 20h
+INIT:0000000140AAB100                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB108                 dq offset aRegistrylazyfl_0 ; "RegistryLazyFlushBootDelay"
+INIT:0000000140AAB110                 dq offset CmpEnableLazyFlushBootDelayInterval
+INIT:0000000140AAB118                 dq 3 dup(0)
+INIT:0000000140AAB130                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB138                 dq offset aRegistrylogfil ; "RegistryLogFileSizeCap"
+INIT:0000000140AAB140                 dq offset CmpLogFileSizeCap
+INIT:0000000140AAB148                 align 20h
+INIT:0000000140AAB160                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB168                 dq offset aRegistryreorga_0 ; "RegistryReorganizationLimit"
+INIT:0000000140AAB170                 dq offset CmpReorganizeLimit
+INIT:0000000140AAB178                 dq 3 dup(0)
+INIT:0000000140AAB190                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB198                 dq offset aRegistryreorga ; "RegistryReorganizationLimitDays"
+INIT:0000000140AAB1A0                 dq offset CmpReorganizeDelayDays
+INIT:0000000140AAB1A8                 align 20h
+INIT:0000000140AAB1C0                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB1C8                 dq offset aRegistryflushg ; "RegistryFlushGlobalFlags"
+INIT:0000000140AAB1D0                 dq offset CmpGlobalFlushControlFlags
+INIT:0000000140AAB1D8                 dq 3 dup(0)
+INIT:0000000140AAB1F0                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB1F8                 dq offset aVirtualization ; "VirtualizationEnabled"
+INIT:0000000140AAB200                 dq offset CmVEEnabled
+INIT:0000000140AAB208                 align 20h
+INIT:0000000140AAB220                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB228                 dq offset aDelayclosesize ; "DelayCloseSize"
+INIT:0000000140AAB230                 dq offset CmpDelayedCloseSize
+INIT:0000000140AAB238                 dq 3 dup(0)
+INIT:0000000140AAB250                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB258                 dq offset aFreezethawtime ; "FreezeThawTimeoutInSeconds"
+INIT:0000000140AAB260                 dq offset CmFreezeThawTimeoutInSeconds
+INIT:0000000140AAB268                 align 20h
+INIT:0000000140AAB280                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB288                 dq offset aSystemhivelimi ; "SystemHiveLimitSize"
+INIT:0000000140AAB290                 dq offset CmSystemHiveLimitSize
+INIT:0000000140AAB298                 dq 3 dup(0)
+INIT:0000000140AAB2B0                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB2B8                 dq offset aEnableperiodic ; "EnablePeriodicBackup"
+INIT:0000000140AAB2C0                 dq offset CmpDoIdleProcessing
+INIT:0000000140AAB2C8                 align 20h
+INIT:0000000140AAB2E0                 dq offset aSessionManager_6 ; "Session Manager\\Configuration Manager"
+INIT:0000000140AAB2E8                 dq offset aVolatileboot ; "VolatileBoot"
+INIT:0000000140AAB2F0                 dq offset CmpVolatileBoot
+INIT:0000000140AAB2F8                 dq 3 dup(0)
+INIT:0000000140AAB310                 dq offset aSessionManager_8 ; "Session Manager\\Configuration Manager"...
+INIT:0000000140AAB318                 dq offset aEnabled_1    ; "Enabled"
+INIT:0000000140AAB320                 dq offset CmpLKGEnabled
+INIT:0000000140AAB328                 align 20h
+INIT:0000000140AAB340                 dq offset aStateseparatio ; "StateSeparation\\Policy"
+INIT:0000000140AAB348                 dq offset aEnabled_1    ; "Enabled"
+INIT:0000000140AAB350                 dq offset CmStateSeparationEnabled
+INIT:0000000140AAB358                 dq 3 dup(0)
+INIT:0000000140AAB370                 dq offset aStateseparatio ; "StateSeparation\\Policy"
+INIT:0000000140AAB378                 dq offset aDevelopmentmod ; "DevelopmentMode"
+INIT:0000000140AAB380                 dq offset CmStateSeparationDevMode
+INIT:0000000140AAB388                 align 20h
+INIT:0000000140AAB3A0                 dq offset aStateseparatio ; "StateSeparation\\Policy"
+INIT:0000000140AAB3A8                 dq offset aAllhivesvolati ; "AllHivesVolatile"
+INIT:0000000140AAB3B0                 dq offset CmStateSeparationAllHivesVolatile
+INIT:0000000140AAB3B8                 dq 3 dup(0)
+INIT:0000000140AAB3D0                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAB3D8                 dq offset aPowerpolicysim_0 ; "PowerPolicySimulate"
+INIT:0000000140AAB3E0                 dq offset PopSimulate
+INIT:0000000140AAB3E8                 align 20h
+INIT:0000000140AAB400                 dq offset aSessionManager_9 ; "Session Manager\\Executive"
+INIT:0000000140AAB408                 dq offset aMaxtimeseparat ; "MaxTimeSeparationBeforeCorrect"
+INIT:0000000140AAB410                 dq offset ExpMaxTimeSeperationBeforeCorrect
+INIT:0000000140AAB418                 dq 3 dup(0)
+INIT:0000000140AAB430                 dq offset aPrioritycontro ; "PriorityControl"
+INIT:0000000140AAB438                 dq offset aWin32prioritys ; "Win32PrioritySeparation"
+INIT:0000000140AAB440                 dq offset PsRawPrioritySeparation
+INIT:0000000140AAB448                 align 20h
+INIT:0000000140AAB460                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAB468                 dq offset aDebuggerRetrie ; "Debugger Retries"
+INIT:0000000140AAB470                 dq offset KdpContext
+INIT:0000000140AAB478                 dq 3 dup(0)
+INIT:0000000140AAB490                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAB498                 dq offset aDebuggermaxmod ; "DebuggerMaxModuleMsgs"
+INIT:0000000140AAB4A0                 dq offset DbgkpMaxModuleMsgs
+INIT:0000000140AAB4A8                 align 20h
+INIT:0000000140AAB4C0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB4C8                 dq offset aWin2000      ; "WIN2000"
+INIT:0000000140AAB4D0                 dq offset Kd_WIN2000_Mask
+INIT:0000000140AAB4D8                 dq 3 dup(0)
+INIT:0000000140AAB4F0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB4F8                 dq offset aSystem_6     ; "SYSTEM"
+INIT:0000000140AAB500                 dq offset Kd_SYSTEM_Mask
+INIT:0000000140AAB508                 align 20h
+INIT:0000000140AAB520                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB528                 dq offset aSmss         ; "SMSS"
+INIT:0000000140AAB530                 dq offset Kd_SMSS_Mask
+INIT:0000000140AAB538                 dq 3 dup(0)
+INIT:0000000140AAB550                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB558                 dq offset aSetup        ; "SETUP"
+INIT:0000000140AAB560                 dq offset Kd_SETUP_Mask
+INIT:0000000140AAB568                 align 20h
+INIT:0000000140AAB580                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB588                 dq offset aNtfs_0       ; "NTFS"
+INIT:0000000140AAB590                 dq offset Kd_NTFS_Mask
+INIT:0000000140AAB598                 dq 3 dup(0)
+INIT:0000000140AAB5B0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB5B8                 dq offset aFstub        ; "FSTUB"
+INIT:0000000140AAB5C0                 dq offset Kd_FSTUB_Mask
+INIT:0000000140AAB5C8                 align 20h
+INIT:0000000140AAB5E0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB5E8                 dq offset aCrashdump    ; "CRASHDUMP"
+INIT:0000000140AAB5F0                 dq offset Kd_CRASHDUMP_Mask
+INIT:0000000140AAB5F8                 dq 3 dup(0)
+INIT:0000000140AAB610                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB618                 dq offset aCdaudio      ; "CDAUDIO"
+INIT:0000000140AAB620                 dq offset Kd_CDAUDIO_Mask
+INIT:0000000140AAB628                 align 20h
+INIT:0000000140AAB640                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB648                 dq offset aCdrom        ; "CDROM"
+INIT:0000000140AAB650                 dq offset Kd_CDROM_Mask
+INIT:0000000140AAB658                 dq 3 dup(0)
+INIT:0000000140AAB670                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB678                 dq offset aClasspnp     ; "CLASSPNP"
+INIT:0000000140AAB680                 dq offset Kd_CLASSPNP_Mask
+INIT:0000000140AAB688                 align 20h
+INIT:0000000140AAB6A0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB6A8                 dq offset aDisk         ; "DISK"
+INIT:0000000140AAB6B0                 dq offset Kd_DISK_Mask
+INIT:0000000140AAB6B8                 dq 3 dup(0)
+INIT:0000000140AAB6D0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB6D8                 dq offset aRedbook      ; "REDBOOK"
+INIT:0000000140AAB6E0                 dq offset Kd_REDBOOK_Mask
+INIT:0000000140AAB6E8                 align 20h
+INIT:0000000140AAB700                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB708                 dq offset aStorprop     ; "STORPROP"
+INIT:0000000140AAB710                 dq offset Kd_STORPROP_Mask
+INIT:0000000140AAB718                 dq 3 dup(0)
+INIT:0000000140AAB730                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB738                 dq offset aScsiport     ; "SCSIPORT"
+INIT:0000000140AAB740                 dq offset Kd_SCSIPORT_Mask
+INIT:0000000140AAB748                 align 20h
+INIT:0000000140AAB760                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB768                 dq offset aScsiminiport ; "SCSIMINIPORT"
+INIT:0000000140AAB770                 dq offset Kd_SCSIMINIPORT_Mask
+INIT:0000000140AAB778                 dq 3 dup(0)
+INIT:0000000140AAB790                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB798                 dq offset aConfig       ; "CONFIG"
+INIT:0000000140AAB7A0                 dq offset Kd_CONFIG_Mask
+INIT:0000000140AAB7A8                 align 20h
+INIT:0000000140AAB7C0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB7C8                 dq offset aI8042prt     ; "I8042PRT"
+INIT:0000000140AAB7D0                 dq offset Kd_I8042PRT_Mask
+INIT:0000000140AAB7D8                 dq 3 dup(0)
+INIT:0000000140AAB7F0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB7F8                 dq offset aSermouse     ; "SERMOUSE"
+INIT:0000000140AAB800                 dq offset Kd_SERMOUSE_Mask
+INIT:0000000140AAB808                 align 20h
+INIT:0000000140AAB820                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB828                 dq offset aLsermous     ; "LSERMOUS"
+INIT:0000000140AAB830                 dq offset Kd_LSERMOUS_Mask
+INIT:0000000140AAB838                 dq 3 dup(0)
+INIT:0000000140AAB850                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB858                 dq offset aKbdhid       ; "KBDHID"
+INIT:0000000140AAB860                 dq offset Kd_KBDHID_Mask
+INIT:0000000140AAB868                 align 20h
+INIT:0000000140AAB880                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB888                 dq offset aMouhid       ; "MOUHID"
+INIT:0000000140AAB890                 dq offset Kd_MOUHID_Mask
+INIT:0000000140AAB898                 dq 3 dup(0)
+INIT:0000000140AAB8B0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB8B8                 dq offset aKbdclass     ; "KBDCLASS"
+INIT:0000000140AAB8C0                 dq offset Kd_KBDCLASS_Mask
+INIT:0000000140AAB8C8                 align 20h
+INIT:0000000140AAB8E0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB8E8                 dq offset aMouclass     ; "MOUCLASS"
+INIT:0000000140AAB8F0                 dq offset Kd_MOUCLASS_Mask
+INIT:0000000140AAB8F8                 dq 3 dup(0)
+INIT:0000000140AAB910                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB918                 dq offset aTwotrack     ; "TWOTRACK"
+INIT:0000000140AAB920                 dq offset Kd_TWOTRACK_Mask
+INIT:0000000140AAB928                 align 20h
+INIT:0000000140AAB940                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB948                 dq offset aWmilib       ; "WMILIB"
+INIT:0000000140AAB950                 dq offset Kd_WMILIB_Mask
+INIT:0000000140AAB958                 dq 3 dup(0)
+INIT:0000000140AAB970                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB978                 dq offset aAcpi_0       ; "ACPI"
+INIT:0000000140AAB980                 dq offset Kd_ACPI_Mask
+INIT:0000000140AAB988                 align 20h
+INIT:0000000140AAB9A0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB9A8                 dq offset aAmli         ; "AMLI"
+INIT:0000000140AAB9B0                 dq offset Kd_AMLI_Mask
+INIT:0000000140AAB9B8                 dq 3 dup(0)
+INIT:0000000140AAB9D0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAB9D8                 dq offset aHalia64      ; "HALIA64"
+INIT:0000000140AAB9E0                 dq offset Kd_HALIA64_Mask
+INIT:0000000140AAB9E8                 align 20h
+INIT:0000000140AABA00                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABA08                 dq offset aVideo        ; "VIDEO"
+INIT:0000000140AABA10                 dq offset Kd_VIDEO_Mask
+INIT:0000000140AABA18                 dq 3 dup(0)
+INIT:0000000140AABA30                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABA38                 dq offset aSvchost      ; "SVCHOST"
+INIT:0000000140AABA40                 dq offset Kd_SVCHOST_Mask
+INIT:0000000140AABA48                 align 20h
+INIT:0000000140AABA60                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABA68                 dq offset aVideoprt     ; "VIDEOPRT"
+INIT:0000000140AABA70                 dq offset Kd_VIDEOPRT_Mask
+INIT:0000000140AABA78                 dq 3 dup(0)
+INIT:0000000140AABA90                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABA98                 dq offset aTcpip        ; "TCPIP"
+INIT:0000000140AABAA0                 dq offset Kd_TCPIP_Mask
+INIT:0000000140AABAA8                 align 20h
+INIT:0000000140AABAC0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABAC8                 dq offset aDmsynth      ; "DMSYNTH"
+INIT:0000000140AABAD0                 dq offset Kd_DMSYNTH_Mask
+INIT:0000000140AABAD8                 dq 3 dup(0)
+INIT:0000000140AABAF0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABAF8                 dq offset aNtospnp_0    ; "NTOSPNP"
+INIT:0000000140AABB00                 dq offset Kd_NTOSPNP_Mask
+INIT:0000000140AABB08                 align 20h
+INIT:0000000140AABB20                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABB28                 dq offset aFastfat      ; "FASTFAT"
+INIT:0000000140AABB30                 dq offset Kd_FASTFAT_Mask
+INIT:0000000140AABB38                 dq 3 dup(0)
+INIT:0000000140AABB50                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABB58                 dq offset aSamss        ; "SAMSS"
+INIT:0000000140AABB60                 dq offset Kd_SAMSS_Mask
+INIT:0000000140AABB68                 align 20h
+INIT:0000000140AABB80                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABB88                 dq offset aPnpmgr       ; "PNPMGR"
+INIT:0000000140AABB90                 dq offset Kd_PNPMGR_Mask
+INIT:0000000140AABB98                 dq 3 dup(0)
+INIT:0000000140AABBB0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABBB8                 dq offset aNetapi       ; "NETAPI"
+INIT:0000000140AABBC0                 dq offset Kd_NETAPI_Mask
+INIT:0000000140AABBC8                 align 20h
+INIT:0000000140AABBE0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABBE8                 dq offset aScserver     ; "SCSERVER"
+INIT:0000000140AABBF0                 dq offset Kd_SCSERVER_Mask
+INIT:0000000140AABBF8                 dq 3 dup(0)
+INIT:0000000140AABC10                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABC18                 dq offset aScclient     ; "SCCLIENT"
+INIT:0000000140AABC20                 dq offset Kd_SCCLIENT_Mask
+INIT:0000000140AABC28                 align 20h
+INIT:0000000140AABC40                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABC48                 dq offset aSerial       ; "SERIAL"
+INIT:0000000140AABC50                 dq offset Kd_SERIAL_Mask
+INIT:0000000140AABC58                 dq 3 dup(0)
+INIT:0000000140AABC70                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABC78                 dq offset aSerenum      ; "SERENUM"
+INIT:0000000140AABC80                 dq offset Kd_SERENUM_Mask
+INIT:0000000140AABC88                 align 20h
+INIT:0000000140AABCA0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABCA8                 dq offset aUhcd         ; "UHCD"
+INIT:0000000140AABCB0                 dq offset Kd_UHCD_Mask
+INIT:0000000140AABCB8                 dq 3 dup(0)
+INIT:0000000140AABCD0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABCD8                 dq offset aRpcproxy     ; "RPCPROXY"
+INIT:0000000140AABCE0                 dq offset Kd_RPCPROXY_Mask
+INIT:0000000140AABCE8                 align 20h
+INIT:0000000140AABD00                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABD08                 dq offset aAutochk      ; "AUTOCHK"
+INIT:0000000140AABD10                 dq offset Kd_AUTOCHK_Mask
+INIT:0000000140AABD18                 dq 3 dup(0)
+INIT:0000000140AABD30                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABD38                 dq offset aDcomss       ; "DCOMSS"
+INIT:0000000140AABD40                 dq offset Kd_DCOMSS_Mask
+INIT:0000000140AABD48                 align 20h
+INIT:0000000140AABD60                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABD68                 dq offset aUnimodem     ; "UNIMODEM"
+INIT:0000000140AABD70                 dq offset Kd_UNIMODEM_Mask
+INIT:0000000140AABD78                 dq 3 dup(0)
+INIT:0000000140AABD90                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABD98                 dq offset aSis          ; "SIS"
+INIT:0000000140AABDA0                 dq offset Kd_SIS_Mask
+INIT:0000000140AABDA8                 align 20h
+INIT:0000000140AABDC0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABDC8                 dq offset aFltmgr       ; "FLTMGR"
+INIT:0000000140AABDD0                 dq offset Kd_FLTMGR_Mask
+INIT:0000000140AABDD8                 dq 3 dup(0)
+INIT:0000000140AABDF0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABDF8                 dq offset aWmicore      ; "WMICORE"
+INIT:0000000140AABE00                 dq offset Kd_WMICORE_Mask
+INIT:0000000140AABE08                 align 20h
+INIT:0000000140AABE20                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABE28                 dq offset aBurneng      ; "BURNENG"
+INIT:0000000140AABE30                 dq offset Kd_BURNENG_Mask
+INIT:0000000140AABE38                 dq 3 dup(0)
+INIT:0000000140AABE50                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABE58                 dq offset aImapi        ; "IMAPI"
+INIT:0000000140AABE60                 dq offset Kd_IMAPI_Mask
+INIT:0000000140AABE68                 align 20h
+INIT:0000000140AABE80                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABE88                 dq offset aSxs          ; "SXS"
+INIT:0000000140AABE90                 dq offset Kd_SXS_Mask
+INIT:0000000140AABE98                 dq 3 dup(0)
+INIT:0000000140AABEB0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABEB8                 dq offset aFusion       ; "FUSION"
+INIT:0000000140AABEC0                 dq offset Kd_FUSION_Mask
+INIT:0000000140AABEC8                 align 20h
+INIT:0000000140AABEE0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABEE8                 dq offset aIdletask     ; "IDLETASK"
+INIT:0000000140AABEF0                 dq offset Kd_IDLETASK_Mask
+INIT:0000000140AABEF8                 dq 3 dup(0)
+INIT:0000000140AABF10                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABF18                 dq offset aSoftpci      ; "SOFTPCI"
+INIT:0000000140AABF20                 dq offset Kd_SOFTPCI_Mask
+INIT:0000000140AABF28                 align 20h
+INIT:0000000140AABF40                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABF48                 dq offset aTape         ; "TAPE"
+INIT:0000000140AABF50                 dq offset Kd_TAPE_Mask
+INIT:0000000140AABF58                 dq 3 dup(0)
+INIT:0000000140AABF70                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABF78                 dq offset aMchgr        ; "MCHGR"
+INIT:0000000140AABF80                 dq offset Kd_MCHGR_Mask
+INIT:0000000140AABF88                 align 20h
+INIT:0000000140AABFA0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABFA8                 dq offset aIdep         ; "IDEP"
+INIT:0000000140AABFB0                 dq offset Kd_IDEP_Mask
+INIT:0000000140AABFB8                 dq 3 dup(0)
+INIT:0000000140AABFD0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AABFD8                 dq offset aPciide       ; "PCIIDE"
+INIT:0000000140AABFE0                 dq offset Kd_PCIIDE_Mask
+INIT:0000000140AABFE8                 align 20h
+INIT:0000000140AAC000                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC008                 dq offset aFloppy       ; "FLOPPY"
+INIT:0000000140AAC010                 dq offset Kd_FLOPPY_Mask
+INIT:0000000140AAC018                 dq 3 dup(0)
+INIT:0000000140AAC030                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC038                 dq offset aFdc          ; "FDC"
+INIT:0000000140AAC040                 dq offset Kd_FDC_Mask
+INIT:0000000140AAC048                 align 20h
+INIT:0000000140AAC060                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC068                 dq offset aTermsrv      ; "TERMSRV"
+INIT:0000000140AAC070                 dq offset Kd_TERMSRV_Mask
+INIT:0000000140AAC078                 dq 3 dup(0)
+INIT:0000000140AAC090                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC098                 dq offset aW32time      ; "W32TIME"
+INIT:0000000140AAC0A0                 dq offset Kd_W32TIME_Mask
+INIT:0000000140AAC0A8                 align 20h
+INIT:0000000140AAC0C0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC0C8                 dq offset aPrefetcher   ; "PREFETCHER"
+INIT:0000000140AAC0D0                 dq offset Kd_PREFETCHER_Mask
+INIT:0000000140AAC0D8                 dq 3 dup(0)
+INIT:0000000140AAC0F0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC0F8                 dq offset aRsfilter     ; "RSFILTER"
+INIT:0000000140AAC100                 dq offset Kd_RSFILTER_Mask
+INIT:0000000140AAC108                 align 20h
+INIT:0000000140AAC120                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC128                 dq offset aFcport       ; "FCPORT"
+INIT:0000000140AAC130                 dq offset Kd_FCPORT_Mask
+INIT:0000000140AAC138                 dq 3 dup(0)
+INIT:0000000140AAC150                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC158                 dq offset aPci_2        ; "PCI"
+INIT:0000000140AAC160                 dq offset Kd_PCI_Mask
+INIT:0000000140AAC168                 align 20h
+INIT:0000000140AAC180                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC188                 dq offset aDmio         ; "DMIO"
+INIT:0000000140AAC190                 dq offset Kd_DMIO_Mask
+INIT:0000000140AAC198                 dq 3 dup(0)
+INIT:0000000140AAC1B0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC1B8                 dq offset aDmconfig     ; "DMCONFIG"
+INIT:0000000140AAC1C0                 dq offset Kd_DMCONFIG_Mask
+INIT:0000000140AAC1C8                 align 20h
+INIT:0000000140AAC1E0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC1E8                 dq offset aDmadmin      ; "DMADMIN"
+INIT:0000000140AAC1F0                 dq offset Kd_DMADMIN_Mask
+INIT:0000000140AAC1F8                 dq 3 dup(0)
+INIT:0000000140AAC210                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC218                 dq offset aWsocktransport ; "WSOCKTRANSPORT"
+INIT:0000000140AAC220                 dq offset Kd_WSOCKTRANSPORT_Mask
+INIT:0000000140AAC228                 align 20h
+INIT:0000000140AAC240                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC248                 dq offset aVss          ; "VSS"
+INIT:0000000140AAC250                 dq offset Kd_VSS_Mask
+INIT:0000000140AAC258                 dq 3 dup(0)
+INIT:0000000140AAC270                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC278                 dq offset aPnpmem       ; "PNPMEM"
+INIT:0000000140AAC280                 dq offset Kd_PNPMEM_Mask
+INIT:0000000140AAC288                 align 20h
+INIT:0000000140AAC2A0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC2A8                 dq offset aProcessor    ; "PROCESSOR"
+INIT:0000000140AAC2B0                 dq offset Kd_PROCESSOR_Mask
+INIT:0000000140AAC2B8                 dq 3 dup(0)
+INIT:0000000140AAC2D0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC2D8                 dq offset aDmserver     ; "DMSERVER"
+INIT:0000000140AAC2E0                 dq offset Kd_DMSERVER_Mask
+INIT:0000000140AAC2E8                 align 20h
+INIT:0000000140AAC300                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC308                 dq offset aSr_0         ; "SR"
+INIT:0000000140AAC310                 dq offset Kd_SR_Mask
+INIT:0000000140AAC318                 dq 3 dup(0)
+INIT:0000000140AAC330                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC338                 dq offset aInfiniband   ; "INFINIBAND"
+INIT:0000000140AAC340                 dq offset Kd_INFINIBAND_Mask
+INIT:0000000140AAC348                 align 20h
+INIT:0000000140AAC360                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC368                 dq offset aIhvdriver    ; "IHVDRIVER"
+INIT:0000000140AAC370                 dq offset Kd_IHVDRIVER_Mask
+INIT:0000000140AAC378                 dq 3 dup(0)
+INIT:0000000140AAC390                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC398                 dq offset aIhvvideo     ; "IHVVIDEO"
+INIT:0000000140AAC3A0                 dq offset Kd_IHVVIDEO_Mask
+INIT:0000000140AAC3A8                 align 20h
+INIT:0000000140AAC3C0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC3C8                 dq offset aIhvaudio     ; "IHVAUDIO"
+INIT:0000000140AAC3D0                 dq offset Kd_IHVAUDIO_Mask
+INIT:0000000140AAC3D8                 dq 3 dup(0)
+INIT:0000000140AAC3F0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC3F8                 dq offset aIhvnetwork   ; "IHVNETWORK"
+INIT:0000000140AAC400                 dq offset Kd_IHVNETWORK_Mask
+INIT:0000000140AAC408                 align 20h
+INIT:0000000140AAC420                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC428                 dq offset aIhvstreaming ; "IHVSTREAMING"
+INIT:0000000140AAC430                 dq offset Kd_IHVSTREAMING_Mask
+INIT:0000000140AAC438                 dq 3 dup(0)
+INIT:0000000140AAC450                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC458                 dq offset aIhvbus       ; "IHVBUS"
+INIT:0000000140AAC460                 dq offset Kd_IHVBUS_Mask
+INIT:0000000140AAC468                 align 20h
+INIT:0000000140AAC480                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC488                 dq offset aHps          ; "HPS"
+INIT:0000000140AAC490                 dq offset Kd_HPS_Mask
+INIT:0000000140AAC498                 dq 3 dup(0)
+INIT:0000000140AAC4B0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC4B8                 dq offset aRtlthreadpool ; "RTLTHREADPOOL"
+INIT:0000000140AAC4C0                 dq offset Kd_RTLTHREADPOOL_Mask
+INIT:0000000140AAC4C8                 align 20h
+INIT:0000000140AAC4E0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC4E8                 dq offset aLdr          ; "LDR"
+INIT:0000000140AAC4F0                 dq offset Kd_LDR_Mask
+INIT:0000000140AAC4F8                 dq 3 dup(0)
+INIT:0000000140AAC510                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC518                 dq offset aTcpip6       ; "TCPIP6"
+INIT:0000000140AAC520                 dq offset Kd_TCPIP6_Mask
+INIT:0000000140AAC528                 align 20h
+INIT:0000000140AAC540                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC548                 dq offset aIsapnp       ; "ISAPNP"
+INIT:0000000140AAC550                 dq offset Kd_ISAPNP_Mask
+INIT:0000000140AAC558                 dq 3 dup(0)
+INIT:0000000140AAC570                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC578                 dq offset aShpc         ; "SHPC"
+INIT:0000000140AAC580                 dq offset Kd_SHPC_Mask
+INIT:0000000140AAC588                 align 20h
+INIT:0000000140AAC5A0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC5A8                 dq offset aStorport     ; "STORPORT"
+INIT:0000000140AAC5B0                 dq offset Kd_STORPORT_Mask
+INIT:0000000140AAC5B8                 dq 3 dup(0)
+INIT:0000000140AAC5D0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC5D8                 dq offset aStorminiport ; "STORMINIPORT"
+INIT:0000000140AAC5E0                 dq offset Kd_STORMINIPORT_Mask
+INIT:0000000140AAC5E8                 align 20h
+INIT:0000000140AAC600                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC608                 dq offset aPrintspooler ; "PRINTSPOOLER"
+INIT:0000000140AAC610                 dq offset Kd_PRINTSPOOLER_Mask
+INIT:0000000140AAC618                 dq 3 dup(0)
+INIT:0000000140AAC630                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC638                 dq offset aVssdyndisk   ; "VSSDYNDISK"
+INIT:0000000140AAC640                 dq offset Kd_VSSDYNDISK_Mask
+INIT:0000000140AAC648                 align 20h
+INIT:0000000140AAC660                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC668                 dq offset aVerifier_0   ; "VERIFIER"
+INIT:0000000140AAC670                 dq offset Kd_VERIFIER_Mask
+INIT:0000000140AAC678                 dq 3 dup(0)
+INIT:0000000140AAC690                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC698                 dq offset aVds          ; "VDS"
+INIT:0000000140AAC6A0                 dq offset Kd_VDS_Mask
+INIT:0000000140AAC6A8                 align 20h
+INIT:0000000140AAC6C0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC6C8                 dq offset aVdsbas       ; "VDSBAS"
+INIT:0000000140AAC6D0                 dq offset Kd_VDSBAS_Mask
+INIT:0000000140AAC6D8                 dq 3 dup(0)
+INIT:0000000140AAC6F0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC6F8                 dq offset aVdsdyn       ; "VDSDYN"
+INIT:0000000140AAC700                 dq offset Kd_VDSDYN_Mask
+INIT:0000000140AAC708                 align 20h
+INIT:0000000140AAC720                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC728                 dq offset aVdsdyndr     ; "VDSDYNDR"
+INIT:0000000140AAC730                 dq offset Kd_VDSDYNDR_Mask
+INIT:0000000140AAC738                 dq 3 dup(0)
+INIT:0000000140AAC750                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC758                 dq offset aVdsldr       ; "VDSLDR"
+INIT:0000000140AAC760                 dq offset Kd_VDSLDR_Mask
+INIT:0000000140AAC768                 align 20h
+INIT:0000000140AAC780                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC788                 dq offset aVdsutil      ; "VDSUTIL"
+INIT:0000000140AAC790                 dq offset Kd_VDSUTIL_Mask
+INIT:0000000140AAC798                 dq 3 dup(0)
+INIT:0000000140AAC7B0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC7B8                 dq offset aDfrgifc      ; "DFRGIFC"
+INIT:0000000140AAC7C0                 dq offset Kd_DFRGIFC_Mask
+INIT:0000000140AAC7C8                 align 20h
+INIT:0000000140AAC7E0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC7E8                 dq offset aDefault_7    ; "DEFAULT"
+INIT:0000000140AAC7F0                 dq offset Kd_DEFAULT_Mask
+INIT:0000000140AAC7F8                 dq 3 dup(0)
+INIT:0000000140AAC810                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC818                 dq offset aMm_0         ; "MM"
+INIT:0000000140AAC820                 dq offset Kd_MM_Mask
+INIT:0000000140AAC828                 align 20h
+INIT:0000000140AAC840                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC848                 dq offset aDfsc         ; "DFSC"
+INIT:0000000140AAC850                 dq offset Kd_DFSC_Mask
+INIT:0000000140AAC858                 dq 3 dup(0)
+INIT:0000000140AAC870                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC878                 dq offset aWow64_1      ; "WOW64"
+INIT:0000000140AAC880                 dq offset Kd_WOW64_Mask
+INIT:0000000140AAC888                 align 20h
+INIT:0000000140AAC8A0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC8A8                 dq offset aAlpc         ; "ALPC"
+INIT:0000000140AAC8B0                 dq offset Kd_ALPC_Mask
+INIT:0000000140AAC8B8                 dq 3 dup(0)
+INIT:0000000140AAC8D0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC8D8                 dq offset aWdi          ; "WDI"
+INIT:0000000140AAC8E0                 dq offset Kd_WDI_Mask
+INIT:0000000140AAC8E8                 align 20h
+INIT:0000000140AAC900                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC908                 dq offset aPerflib      ; "PERFLIB"
+INIT:0000000140AAC910                 dq offset Kd_PERFLIB_Mask
+INIT:0000000140AAC918                 dq 3 dup(0)
+INIT:0000000140AAC930                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC938                 dq offset aKtm          ; "KTM"
+INIT:0000000140AAC940                 dq offset Kd_KTM_Mask
+INIT:0000000140AAC948                 align 20h
+INIT:0000000140AAC960                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC968                 dq offset aIostress     ; "IOSTRESS"
+INIT:0000000140AAC970                 dq offset Kd_IOSTRESS_Mask
+INIT:0000000140AAC978                 dq 3 dup(0)
+INIT:0000000140AAC990                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC998                 dq offset aHeap         ; "HEAP"
+INIT:0000000140AAC9A0                 dq offset Kd_HEAP_Mask
+INIT:0000000140AAC9A8                 align 20h
+INIT:0000000140AAC9C0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC9C8                 dq offset aWhea_2       ; "WHEA"
+INIT:0000000140AAC9D0                 dq offset Kd_WHEA_Mask
+INIT:0000000140AAC9D8                 dq 3 dup(0)
+INIT:0000000140AAC9F0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAC9F8                 dq offset aUsergdi      ; "USERGDI"
+INIT:0000000140AACA00                 dq offset Kd_USERGDI_Mask
+INIT:0000000140AACA08                 align 20h
+INIT:0000000140AACA20                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACA28                 dq offset aMmcss        ; "MMCSS"
+INIT:0000000140AACA30                 dq offset Kd_MMCSS_Mask
+INIT:0000000140AACA38                 dq 3 dup(0)
+INIT:0000000140AACA50                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACA58                 dq offset aTpm          ; "TPM"
+INIT:0000000140AACA60                 dq offset Kd_TPM_Mask
+INIT:0000000140AACA68                 align 20h
+INIT:0000000140AACA80                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACA88                 dq offset aThreadorder  ; "THREADORDER"
+INIT:0000000140AACA90                 dq offset Kd_THREADORDER_Mask
+INIT:0000000140AACA98                 dq 3 dup(0)
+INIT:0000000140AACAB0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACAB8                 dq offset aEnviron      ; "ENVIRON"
+INIT:0000000140AACAC0                 dq offset Kd_ENVIRON_Mask
+INIT:0000000140AACAC8                 align 20h
+INIT:0000000140AACAE0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACAE8                 dq offset aEms          ; "EMS"
+INIT:0000000140AACAF0                 dq offset Kd_EMS_Mask
+INIT:0000000140AACAF8                 dq 3 dup(0)
+INIT:0000000140AACB10                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACB18                 dq offset aWdt          ; "WDT"
+INIT:0000000140AACB20                 dq offset Kd_WDT_Mask
+INIT:0000000140AACB28                 align 20h
+INIT:0000000140AACB40                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACB48                 dq offset aFvevol       ; "FVEVOL"
+INIT:0000000140AACB50                 dq offset Kd_FVEVOL_Mask
+INIT:0000000140AACB58                 dq 3 dup(0)
+INIT:0000000140AACB70                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACB78                 dq offset aNdis         ; "NDIS"
+INIT:0000000140AACB80                 dq offset Kd_NDIS_Mask
+INIT:0000000140AACB88                 align 20h
+INIT:0000000140AACBA0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACBA8                 dq offset aNvctrace     ; "NVCTRACE"
+INIT:0000000140AACBB0                 dq offset Kd_NVCTRACE_Mask
+INIT:0000000140AACBB8                 dq 3 dup(0)
+INIT:0000000140AACBD0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACBD8                 dq offset aLuafv        ; "LUAFV"
+INIT:0000000140AACBE0                 dq offset Kd_LUAFV_Mask
+INIT:0000000140AACBE8                 align 20h
+INIT:0000000140AACC00                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACC08                 dq offset aAppcompat    ; "APPCOMPAT"
+INIT:0000000140AACC10                 dq offset Kd_APPCOMPAT_Mask
+INIT:0000000140AACC18                 dq 3 dup(0)
+INIT:0000000140AACC30                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACC38                 dq offset aUsbstor      ; "USBSTOR"
+INIT:0000000140AACC40                 dq offset Kd_USBSTOR_Mask
+INIT:0000000140AACC48                 align 20h
+INIT:0000000140AACC60                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACC68                 dq offset aSbp2port     ; "SBP2PORT"
+INIT:0000000140AACC70                 dq offset Kd_SBP2PORT_Mask
+INIT:0000000140AACC78                 dq 3 dup(0)
+INIT:0000000140AACC90                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACC98                 dq offset aCoverage     ; "COVERAGE"
+INIT:0000000140AACCA0                 dq offset Kd_COVERAGE_Mask
+INIT:0000000140AACCA8                 align 20h
+INIT:0000000140AACCC0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACCC8                 dq offset aCachemgr     ; "CACHEMGR"
+INIT:0000000140AACCD0                 dq offset Kd_CACHEMGR_Mask
+INIT:0000000140AACCD8                 dq 3 dup(0)
+INIT:0000000140AACCF0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACCF8                 dq offset aMountmgr     ; "MOUNTMGR"
+INIT:0000000140AACD00                 dq offset Kd_MOUNTMGR_Mask
+INIT:0000000140AACD08                 align 20h
+INIT:0000000140AACD20                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACD28                 dq offset aCfr          ; "CFR"
+INIT:0000000140AACD30                 dq offset Kd_CFR_Mask
+INIT:0000000140AACD38                 dq 3 dup(0)
+INIT:0000000140AACD50                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACD58                 dq offset aTxf          ; "TXF"
+INIT:0000000140AACD60                 dq offset Kd_TXF_Mask
+INIT:0000000140AACD68                 align 20h
+INIT:0000000140AACD80                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACD88                 dq offset aKsecdd       ; "KSECDD"
+INIT:0000000140AACD90                 dq offset Kd_KSECDD_Mask
+INIT:0000000140AACD98                 dq 3 dup(0)
+INIT:0000000140AACDB0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACDB8                 dq offset aFltregress   ; "FLTREGRESS"
+INIT:0000000140AACDC0                 dq offset Kd_FLTREGRESS_Mask
+INIT:0000000140AACDC8                 align 20h
+INIT:0000000140AACDE0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACDE8                 dq offset aMpio         ; "MPIO"
+INIT:0000000140AACDF0                 dq offset Kd_MPIO_Mask
+INIT:0000000140AACDF8                 dq 3 dup(0)
+INIT:0000000140AACE10                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACE18                 dq offset aMsdsm        ; "MSDSM"
+INIT:0000000140AACE20                 dq offset Kd_MSDSM_Mask
+INIT:0000000140AACE28                 align 20h
+INIT:0000000140AACE40                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACE48                 dq offset aUdfs         ; "UDFS"
+INIT:0000000140AACE50                 dq offset Kd_UDFS_Mask
+INIT:0000000140AACE58                 dq 3 dup(0)
+INIT:0000000140AACE70                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACE78                 dq offset aPshed        ; "PSHED"
+INIT:0000000140AACE80                 dq offset Kd_PSHED_Mask
+INIT:0000000140AACE88                 align 20h
+INIT:0000000140AACEA0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACEA8                 dq offset aStorvsp      ; "STORVSP"
+INIT:0000000140AACEB0                 dq offset Kd_STORVSP_Mask
+INIT:0000000140AACEB8                 dq 3 dup(0)
+INIT:0000000140AACED0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACED8                 dq offset aLsass        ; "LSASS"
+INIT:0000000140AACEE0                 dq offset Kd_LSASS_Mask
+INIT:0000000140AACEE8                 align 20h
+INIT:0000000140AACF00                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACF08                 dq offset aSspicli      ; "SSPICLI"
+INIT:0000000140AACF10                 dq offset Kd_SSPICLI_Mask
+INIT:0000000140AACF18                 dq 3 dup(0)
+INIT:0000000140AACF30                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACF38                 dq offset aCng          ; "CNG"
+INIT:0000000140AACF40                 dq offset Kd_CNG_Mask
+INIT:0000000140AACF48                 align 20h
+INIT:0000000140AACF60                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACF68                 dq offset aExfat        ; "EXFAT"
+INIT:0000000140AACF70                 dq offset Kd_EXFAT_Mask
+INIT:0000000140AACF78                 dq 3 dup(0)
+INIT:0000000140AACF90                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACF98                 dq offset aFiletrace    ; "FILETRACE"
+INIT:0000000140AACFA0                 dq offset Kd_FILETRACE_Mask
+INIT:0000000140AACFA8                 align 20h
+INIT:0000000140AACFC0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACFC8                 dq offset aXsave        ; "XSAVE"
+INIT:0000000140AACFD0                 dq offset Kd_XSAVE_Mask
+INIT:0000000140AACFD8                 dq 3 dup(0)
+INIT:0000000140AACFF0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AACFF8                 dq offset aSe           ; "SE"
+INIT:0000000140AAD000                 dq offset Kd_SE_Mask
+INIT:0000000140AAD008                 align 20h
+INIT:0000000140AAD020                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAD028                 dq offset aDriveextender ; "DRIVEEXTENDER"
+INIT:0000000140AAD030                 dq offset Kd_DRIVEEXTENDER_Mask
+INIT:0000000140AAD038                 dq 3 dup(0)
+INIT:0000000140AAD050                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAD058                 dq offset aPower_0      ; "POWER"
+INIT:0000000140AAD060                 dq offset Kd_POWER_Mask
+INIT:0000000140AAD068                 align 20h
+INIT:0000000140AAD080                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAD088                 dq offset aCrashdumpxhci ; "CRASHDUMPXHCI"
+INIT:0000000140AAD090                 dq offset Kd_CRASHDUMPXHCI_Mask
+INIT:0000000140AAD098                 dq 3 dup(0)
+INIT:0000000140AAD0B0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAD0B8                 dq offset aGpio         ; "GPIO"
+INIT:0000000140AAD0C0                 dq offset Kd_GPIO_Mask
+INIT:0000000140AAD0C8                 align 20h
+INIT:0000000140AAD0E0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAD0E8                 dq offset aRefs         ; "REFS"
+INIT:0000000140AAD0F0                 dq offset Kd_REFS_Mask
+INIT:0000000140AAD0F8                 dq 3 dup(0)
+INIT:0000000140AAD110                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAD118                 dq offset aWer          ; "WER"
+INIT:0000000140AAD120                 dq offset Kd_WER_Mask
+INIT:0000000140AAD128                 align 20h
+INIT:0000000140AAD140                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAD148                 dq offset aCapimg       ; "CAPIMG"
+INIT:0000000140AAD150                 dq offset Kd_CAPIMG_Mask
+INIT:0000000140AAD158                 dq 3 dup(0)
+INIT:0000000140AAD170                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAD178                 dq offset aVpci         ; "VPCI"
+INIT:0000000140AAD180                 dq offset Kd_VPCI_Mask
+INIT:0000000140AAD188                 align 20h
+INIT:0000000140AAD1A0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAD1A8                 dq offset aStorageclassme ; "STORAGECLASSMEMORY"
+INIT:0000000140AAD1B0                 dq offset Kd_STORAGECLASSMEMORY_Mask
+INIT:0000000140AAD1B8                 dq 3 dup(0)
+INIT:0000000140AAD1D0                 dq offset aSessionManager ; "Session Manager\\Debug Print Filter"
+INIT:0000000140AAD1D8                 dq offset aFslib        ; "FSLIB"
+INIT:0000000140AAD1E0                 dq offset Kd_FSLIB_Mask
+INIT:0000000140AAD1E8                 align 20h
+INIT:0000000140AAD200                 dq offset aWhea_2       ; "WHEA"
+INIT:0000000140AAD208                 dq offset aSinglebiteccer ; "SingleBitEccErrorThreshold"
+INIT:0000000140AAD210                 dq offset WheapSingleBitEccErrorThreshold
+INIT:0000000140AAD218                 dq 3 dup(0)
+INIT:0000000140AAD230                 dq offset aWhea_2       ; "WHEA"
+INIT:0000000140AAD238                 dq offset aMaxcorrectedmc ; "MaxCorrectedMCEOutstanding"
+INIT:0000000140AAD240                 dq offset WheapMaxCorrectedMCEOutstanding
+INIT:0000000140AAD248                 align 20h
+INIT:0000000140AAD260                 dq offset aWheaPolicy_1 ; "WHEA\\Policy"
+INIT:0000000140AAD268                 dq offset aDisableoffline_0 ; "DisableOffline"
+INIT:0000000140AAD270                 dq offset WheaRegPolicyDisableOffline
+INIT:0000000140AAD278                 dq 3 dup(0)
+INIT:0000000140AAD290                 dq offset aWheaPolicy_1 ; "WHEA\\Policy"
+INIT:0000000140AAD298                 dq offset aMempersistoffl_0 ; "MemPersistOffline"
+INIT:0000000140AAD2A0                 dq offset WheaRegPolicyMemPersistOffline
+INIT:0000000140AAD2A8                 align 20h
+INIT:0000000140AAD2C0                 dq offset aWheaPolicy_1 ; "WHEA\\Policy"
+INIT:0000000140AAD2C8                 dq offset aMempfadisable_0 ; "MemPfaDisable"
+INIT:0000000140AAD2D0                 dq offset WheaRegPolicyMemPfaDisable
+INIT:0000000140AAD2D8                 dq 3 dup(0)
+INIT:0000000140AAD2F0                 dq offset aWheaPolicy_1 ; "WHEA\\Policy"
+INIT:0000000140AAD2F8                 dq offset aMempfapagecoun_0 ; "MemPfaPageCount"
+INIT:0000000140AAD300                 dq offset WheaRegPolicyMemPfaPageCount
+INIT:0000000140AAD308                 align 20h
+INIT:0000000140AAD320                 dq offset aWheaPolicy_1 ; "WHEA\\Policy"
+INIT:0000000140AAD328                 dq offset aMempfathreshol_0 ; "MemPfaThreshold"
+INIT:0000000140AAD330                 dq offset WheaRegPolicyMemPfaThreshold
+INIT:0000000140AAD338                 dq 3 dup(0)
+INIT:0000000140AAD350                 dq offset aWheaPolicy_1 ; "WHEA\\Policy"
+INIT:0000000140AAD358                 dq offset aMempfatimeout_0 ; "MemPfaTimeout"
+INIT:0000000140AAD360                 dq offset WheaRegPolicyMemPfaTimeout
+INIT:0000000140AAD368                 align 20h
+INIT:0000000140AAD380                 dq offset aWheaPolicy_1 ; "WHEA\\Policy"
+INIT:0000000140AAD388                 dq offset aIgnoredummywri ; "IgnoreDummyWrite"
+INIT:0000000140AAD390                 dq offset WheaRegPolicyIgnoreDummyWrite
+INIT:0000000140AAD398                 dq 3 dup(0)
+INIT:0000000140AAD3B0                 dq offset aWheaPolicy_1 ; "WHEA\\Policy"
+INIT:0000000140AAD3B8                 dq offset aRestorecmciena ; "RestoreCmciEnabled"
+INIT:0000000140AAD3C0                 dq offset WheapRegPolicyRestoreCmciEnabled
+INIT:0000000140AAD3C8                 align 20h
+INIT:0000000140AAD3E0                 dq offset aWheaPolicy_1 ; "WHEA\\Policy"
+INIT:0000000140AAD3E8                 dq offset aRestorecmcimax ; "RestoreCmciMaxAttempts"
+INIT:0000000140AAD3F0                 dq offset WheapRegPolicyRestoreCmciMaxAttempts
+INIT:0000000140AAD3F8                 dq 3 dup(0)
+INIT:0000000140AAD410                 dq offset aWheaPolicy_1 ; "WHEA\\Policy"
+INIT:0000000140AAD418                 dq offset aRestorecmcierr_0 ; "RestoreCmciErrorLimit"
+INIT:0000000140AAD420                 dq offset WheapRegPolicyRestoreCmciErrorLimit
+INIT:0000000140AAD428                 align 20h
+INIT:0000000140AAD440                 dq offset aWheaPolicy_1 ; "WHEA\\Policy"
+INIT:0000000140AAD448                 dq offset aCmcthresholdco_0 ; "CMCThresholdCount"
+INIT:0000000140AAD450                 dq offset WheapRegPolicyCmciThresholdCount
+INIT:0000000140AAD458                 dq 3 dup(0)
+INIT:0000000140AAD470                 dq offset aWheaPolicy_1 ; "WHEA\\Policy"
+INIT:0000000140AAD478                 dq offset aCmcthresholdse_0 ; "CMCThresholdSeconds"
+INIT:0000000140AAD480                 dq offset WheapRegPolicyCmciThresholdTime
+INIT:0000000140AAD488                 align 20h
+INIT:0000000140AAD4A0                 dq offset aWheaPolicy_1 ; "WHEA\\Policy"
+INIT:0000000140AAD4A8                 dq offset aCmcpollinglimi_1 ; "CMCPollingLimit"
+INIT:0000000140AAD4B0                 dq offset WheapRegPolicyCmciThresholdPollCount
+INIT:0000000140AAD4B8                 dq 3 dup(0)
+INIT:0000000140AAD4D0                 dq offset aWmiTrace     ; "WMI\\Trace"
+INIT:0000000140AAD4D8                 dq offset aProfileinterva ; "ProfileInterval"
+INIT:0000000140AAD4E0                 dq offset EtwpProfileInterval
+INIT:0000000140AAD4E8                 align 20h
+INIT:0000000140AAD500                 dq offset aWmiTrace     ; "WMI\\Trace"
+INIT:0000000140AAD508                 dq offset aMeminfointerva ; "MemInfoInterval"
+INIT:0000000140AAD510                 dq offset EtwpMemInfoInterval
+INIT:0000000140AAD518                 dq 3 dup(0)
+INIT:0000000140AAD530                 dq offset aWmiTrace     ; "WMI\\Trace"
+INIT:0000000140AAD538                 dq offset aStackcaptureti_0 ; "StackCaptureTimeout"
+INIT:0000000140AAD540                 dq offset EtwpStackCaptureTimeout
+INIT:0000000140AAD548                 align 20h
+INIT:0000000140AAD560                 dq offset aWmiTrace     ; "WMI\\Trace"
+INIT:0000000140AAD568                 dq offset aCoverageentryc ; "CoverageEntryCount"
+INIT:0000000140AAD570                 dq offset EtwpCoverageEntryCount
+INIT:0000000140AAD578                 dq 3 dup(0)
+INIT:0000000140AAD590                 dq offset aWmiTrace     ; "WMI\\Trace"
+INIT:0000000140AAD598                 dq offset aCoverageflushp ; "CoverageFlushPeriod"
+INIT:0000000140AAD5A0                 dq offset EtwpCoverageFlushPeriod
+INIT:0000000140AAD5A8                 align 20h
+INIT:0000000140AAD5C0                 dq offset aWmiTrace     ; "WMI\\Trace"
+INIT:0000000140AAD5C8                 dq offset aCoverageresetp ; "CoverageResetPeriod"
+INIT:0000000140AAD5D0                 dq offset EtwpCoverageResetPeriod
+INIT:0000000140AAD5D8                 dq 3 dup(0)
+INIT:0000000140AAD5F0                 dq offset aEmbeddedntExec ; "EmbeddedNT\\Executive"
+INIT:0000000140AAD5F8                 dq offset aKernelonlyconf ; "KernelOnlyConfiguration"
+INIT:0000000140AAD600                 dq offset PsEmbeddedNTMask
+INIT:0000000140AAD608                 dq 3 dup(0)
+INIT:0000000140AAD620                 dq offset aCrashcontrol ; "CrashControl"
+INIT:0000000140AAD628                 dq offset aAutoreboot_0 ; "AutoReboot"
+INIT:0000000140AAD630                 dq offset IopAutoReboot
+INIT:0000000140AAD638                 dq 3 dup(0)
+INIT:0000000140AAD650                 dq offset aSessionManager_9 ; "Session Manager\\Executive"
+INIT:0000000140AAD658                 dq offset aTickcountrollo ; "TickcountRolloverDelay"
+INIT:0000000140AAD660                 dq offset InitTickRolloverDelay
+INIT:0000000140AAD668                 dq offset InitTickRolloverDelayLength
+INIT:0000000140AAD670                 dq offset InitTickRolloverDelayType
+INIT:0000000140AAD678                 align 20h
+INIT:0000000140AAD680                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAD688                 dq offset aAlpcmessagelog ; "AlpcMessageLog"
+INIT:0000000140AAD690                 dq offset AlpcpMessageLogEnabled
+INIT:0000000140AAD698                 dq 3 dup(0)
+INIT:0000000140AAD6B0                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAD6B8                 dq offset aAlpcwakepolicy ; "AlpcWakePolicy"
+INIT:0000000140AAD6C0                 dq offset AlpcpWakePolicyDefault
+INIT:0000000140AAD6C8                 align 20h
+INIT:0000000140AAD6E0                 dq offset aSessionManager_9 ; "Session Manager\\Executive"
+INIT:0000000140AAD6E8                 dq offset aCoveragemaxpag ; "CoverageMaxPagedPool"
+INIT:0000000140AAD6F0                 dq offset ExCovMaxPagedPoolToUse
+INIT:0000000140AAD6F8                 dq 3 dup(0)
+INIT:0000000140AAD710                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAD718                 dq offset aImageexecution ; "ImageExecutionOptions"
+INIT:0000000140AAD720                 dq offset ViImageExecutionOptions
+INIT:0000000140AAD728                 align 20h
+INIT:0000000140AAD740                 dq offset aValidationrunl ; "ValidationRunlevels"
+INIT:0000000140AAD748                 dq offset aGlobal       ; "Global"
+INIT:0000000140AAD750                 dq offset CmGlobalValidationRunlevel
+INIT:0000000140AAD758                 dq 3 dup(0)
+INIT:0000000140AAD770                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AAD778                 dq offset aBugcheckunexpe ; "BugCheckUnexpectedInterrupts"
+INIT:0000000140AAD780                 dq offset KiBugCheckUnexpectedInterrupts
+INIT:0000000140AAD788                 align 20h
+INIT:0000000140AAD7A0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AAD7A8                 dq offset aDebuggerisstal ; "DebuggerIsStallOwner"
+INIT:0000000140AAD7B0                 dq offset KiDebuggerIsStallOwner
+INIT:0000000140AAD7B8                 dq 3 dup(0)
+INIT:0000000140AAD7D0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AAD7D8                 dq offset aDebugpollinter ; "DebugPollInterval"
+INIT:0000000140AAD7E0                 dq offset KiDebugPollInterval
+INIT:0000000140AAD7E8                 align 20h
+INIT:0000000140AAD800                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AAD808                 dq offset aPowerofffrozen ; "PowerOffFrozenProcessors"
+INIT:0000000140AAD810                 dq offset KiPowerOffFrozenProcessors
+INIT:0000000140AAD818                 dq 3 dup(0)
+INIT:0000000140AAD830                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AAD838                 dq offset aDisablelightwe ; "DisableLightWeightSuspend"
+INIT:0000000140AAD840                 dq offset KiDisableLightWeightSuspend
+INIT:0000000140AAD848                 align 20h
+INIT:0000000140AAD860                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAD868                 dq offset aErrorportstart ; "ErrorPortStartTimeout"
+INIT:0000000140AAD870                 dq offset DbgkErrorPortStartTimeout
+INIT:0000000140AAD878                 dq 3 dup(0)
+INIT:0000000140AAD890                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAD898                 dq offset aErrorportcommt ; "ErrorPortCommTimeout"
+INIT:0000000140AAD8A0                 dq offset DbgkErrorPortCommTimeout
+INIT:0000000140AAD8A8                 align 20h
+INIT:0000000140AAD8C0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AAD8C8                 dq offset aObobjectsecuri ; "ObObjectSecurityInheritance"
+INIT:0000000140AAD8D0                 dq offset ObpObjectSecurityInheritance
+INIT:0000000140AAD8D8                 dq 3 dup(0)
+INIT:0000000140AAD8F0                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAD8F8                 dq offset aPowersimulateh_0 ; "PowerSimulateHiberBugcheck"
+INIT:0000000140AAD900                 dq offset PopSimulateHiberBugcheck
+INIT:0000000140AAD908                 align 20h
+INIT:0000000140AAD920                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AAD928                 dq offset aSeallowallappl ; "SeAllowAllApplicationAceRemoval"
+INIT:0000000140AAD930                 dq offset SepAllowAllApplicationAceRemoval
+INIT:0000000140AAD938                 dq 3 dup(0)
+INIT:0000000140AAD950                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAD958                 dq offset aInitconsolefla ; "InitConsoleFlags"
+INIT:0000000140AAD960                 dq offset InitConsoleFlags
+INIT:0000000140AAD968                 align 20h
+INIT:0000000140AAD980                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAD988                 dq offset aMultiusersinse ; "MultiUsersInSessionSupported"
+INIT:0000000140AAD990                 dq offset RtlpMultiUsersInSessionSupported
+INIT:0000000140AAD998                 dq 3 dup(0)
+INIT:0000000140AAD9B0                 dq offset aSessionManager_11 ; "Session Manager"
+INIT:0000000140AAD9B8                 dq offset aDisableifeocac ; "DisableIFEOCaching"
+INIT:0000000140AAD9C0                 dq offset RtlpDisableIFEOCaching
+INIT:0000000140AAD9C8                 align 20h
+INIT:0000000140AAD9E0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AAD9E8                 dq offset aHyperstartdisa ; "HyperStartDisabled"
+INIT:0000000140AAD9F0                 dq offset HvlVpStartDisabled
+INIT:0000000140AAD9F8                 dq 3 dup(0)
+INIT:0000000140AADA10                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADA18                 dq offset aSeallowsession ; "SeAllowSessionImpersonationCapability"
+INIT:0000000140AADA20                 dq offset SepAllowSessionImpersonationCap
+INIT:0000000140AADA28                 align 20h
+INIT:0000000140AADA40                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADA48                 dq offset aInterruptsteer ; "InterruptSteeringDisabled"
+INIT:0000000140AADA50                 dq offset KiInterruptSteeringDisabled
+INIT:0000000140AADA58                 dq 3 dup(0)
+INIT:0000000140AADA70                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADA78                 dq offset aSetokensinglet ; "SeTokenSingletonAttributesConfig"
+INIT:0000000140AADA80                 dq offset SepTokenSingletonAttributesConfig
+INIT:0000000140AADA88                 align 20h
+INIT:0000000140AADAA0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADAA8                 dq offset aSecompatflags ; "SeCompatFlags"
+INIT:0000000140AADAB0                 dq offset SeCompatFlags
+INIT:0000000140AADAB8                 dq 3 dup(0)
+INIT:0000000140AADAD0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADAD8                 dq offset aSetokenleakdia ; "SeTokenLeakDiag"
+INIT:0000000140AADAE0                 dq offset SeTokenLeakTracking
+INIT:0000000140AADAE8                 align 20h
+INIT:0000000140AADB00                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADB08                 dq offset aSetokendoesnot ; "SeTokenDoesNotTrackSessionObject"
+INIT:0000000140AADB10                 dq offset SeTokenDoesNotTrackSessionObject
+INIT:0000000140AADB18                 dq 3 dup(0)
+INIT:0000000140AADB30                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADB38                 dq offset aHeterofavoredc ; "HeteroFavoredCoreFallback"
+INIT:0000000140AADB40                 dq offset PpmHeteroFavoredCoreFallback
+INIT:0000000140AADB48                 align 20h
+INIT:0000000140AADB60                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADB68                 dq offset aVirtualheteroh ; "VirtualHeteroHysteresis"
+INIT:0000000140AADB70                 dq offset PpmPerfQosTransitionHysteresisOverride
+INIT:0000000140AADB78                 dq 3 dup(0)
+INIT:0000000140AADB90                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADB98                 dq offset aHrincrement  ; "HrIncrement"
+INIT:0000000140AADBA0                 dq offset KiHrIncrement
+INIT:0000000140AADBA8                 align 20h
+INIT:0000000140AADBC0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADBC8                 dq offset aRebalanceminpr ; "RebalanceMinPriority"
+INIT:0000000140AADBD0                 dq offset KiRebalanceMinPriority
+INIT:0000000140AADBD8                 dq 3 dup(0)
+INIT:0000000140AADBF0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADBF8                 dq offset aSelpacenablewa ; "SeLpacEnableWatsonReporting"
+INIT:0000000140AADC00                 dq offset SeLpacEnableWatsonReporting
+INIT:0000000140AADC08                 align 20h
+INIT:0000000140AADC20                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADC28                 dq offset aSelpacenablewa_0 ; "SeLpacEnableWatsonThrottling"
+INIT:0000000140AADC30                 dq offset SeLpacEnableWatsonThrottling
+INIT:0000000140AADC38                 dq 3 dup(0)
+INIT:0000000140AADC50                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADC58                 dq offset aEnableweruserr ; "EnableWerUserReporting"
+INIT:0000000140AADC60                 dq offset DbgkEnableWerUserReporting
+INIT:0000000140AADC68                 align 20h
+INIT:0000000140AADC80                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADC88                 dq offset aAdminlessenabl_0 ; "AdminlessEnableWatsonReporting"
+INIT:0000000140AADC90                 dq offset SeAdminlessEnableWatsonReporting
+INIT:0000000140AADC98                 dq 3 dup(0)
+INIT:0000000140AADCB0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADCB8                 dq offset aAdminlessenabl ; "AdminlessEnableWatsonThrottling"
+INIT:0000000140AADCC0                 dq offset SeAdminlessEnableWatsonThrottling
+INIT:0000000140AADCC8                 align 20h
+INIT:0000000140AADCE0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADCE8                 dq offset aAdminlessenfor ; "AdminlessEnforcementModeEnabled"
+INIT:0000000140AADCF0                 dq offset SeAdminlessEnforcementModeEnabled
+INIT:0000000140AADCF8                 dq 3 dup(0)
+INIT:0000000140AADD10                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADD18                 dq offset aDeviceownerpro ; "DeviceOwnerProtectionDowngradeAllowed"
+INIT:0000000140AADD20                 dq offset SeDeviceOwnerProtectionDowngradeAllowed
+INIT:0000000140AADD28                 align 20h
+INIT:0000000140AADD40                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADD48                 dq offset aCacheawaresche ; "CacheAwareScheduling"
+INIT:0000000140AADD50                 dq offset KiCacheAwareScheduling
+INIT:0000000140AADD58                 dq 3 dup(0)
+INIT:0000000140AADD70                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADD78                 dq offset aHeteroschedule ; "HeteroSchedulerOptions"
+INIT:0000000140AADD80                 dq offset KiHeteroSchedulerOptions
+INIT:0000000140AADD88                 align 20h
+INIT:0000000140AADDA0                 dq offset aVersionKernel ; "Version\\Kernel"
+INIT:0000000140AADDA8                 dq offset aKvb          ; "KVB"
+INIT:0000000140AADDB0                 dq offset KernelVersionBump
+INIT:0000000140AADDB8                 dq 3 dup(0)
+INIT:0000000140AADDD0                 dq offset aSessionManager_5 ; "Session Manager\\Kernel"
+INIT:0000000140AADDD8                 dq offset aAdminlessenabl_1 ; "AdminlessEnableEventLogging"
+INIT:0000000140AADDE0                 dq offset SeAdminlessEnableEventLogging
+INIT:0000000140AADDE8                 align 20h
+INIT:0000000140AADE00                 dq offset aKernelvelocity ; "KernelVelocity"
+INIT:0000000140AADE08                 dq offset aKvfHotpatchsim_0 ; "KVF_HotPatchSimulation"
+INIT:0000000140AADE10                 dq offset KvfFeatureStates
+INIT:0000000140AADE18                 dq 2 dup(0)
+INIT:0000000140AADE28                 dq 1
+INIT:0000000140AADE30                 dq offset aKernelvelocity ; "KernelVelocity"
+INIT:0000000140AADE38                 dq offset aKvfExmutantaut_0 ; "KVF_ExMutantAutoboost"
+INIT:0000000140AADE40                 dq offset unk_140C05010
+INIT:0000000140AADE48                 dq 2 dup(0)
+INIT:0000000140AADE58                 dq 1, 6 dup(0)
