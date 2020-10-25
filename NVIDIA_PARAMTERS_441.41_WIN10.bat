@@ -1,7 +1,7 @@
 REM #############################################################
 REM # NVIDIA DRIVER SETTINGS                                    #
 REM # DRIVER: 	441.41-desktop-win10-64bit-international-whql   #
-REM # NOTE:														                          #
+REM # NOTE:                                                     #
 REM # Prepared for batch scripting                              #
 REM # Edit REG_#### and according Values                        #
 REM # St1cky - 	25.10.2020                                      #
