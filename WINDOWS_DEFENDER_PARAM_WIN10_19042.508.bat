@@ -87,9 +87,43 @@ REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "Maintenance
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MaintenanceNonCriticalDeadline" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ManagedDefenderProductType" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MdmSubscriberIds" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "NewLocation" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "OOBEInstallTime" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "OldMachineGUID" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "OrgID" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "OutdatedPlatformVersion" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "PUAProtection" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "PartnerGUID" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "PassiveMode" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "PreserveInternalLicenseOnUpgrade" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "PreviousRunningMode" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProductAppDataPath" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProductLocalizedName" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProductStatus" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProductType" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProxyBypass" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProxyConfigOverride" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProxyPacUrl" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProxyServer" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "RandomizeScheduleTaskTimes" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "RemediationExe" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ReportingGUID" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "RoutineActionDelay" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "RoutineActionMaxDelay" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "RpcUserQuota" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ServiceHardeningFlags" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ServiceKeepAlive" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "SmartLockerMode" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "SpecialRunningModeKillbitted" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "SupportLogEventIds" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "SupportLogLocation" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ThreatFileHashLogging" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "TrustedImageIdentifier" /t REG_DWORD /d "0" /f
+
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" /v "DisableDatagramProcessing" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" /v "DisableLastAccessTimeSuppression" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" /v "NIS_CustomSmartscreenHostname" /t REG_DWORD /d "0" /f
+
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "EnableFileHashComputation" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "MpBafsExtendedTimeout" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "MpCampGradualRelease" /t REG_DWORD /d "0" /f
@@ -110,47 +144,14 @@ REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\NIS\Consumers\IP
 
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\NIS" /v "StartDelay" /t REG_DWORD /d "0" /f
 
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "NewLocation" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "OOBEInstallTime" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "OldMachineGUID" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "OrgID" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "OutdatedPlatformVersion" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "PUAProtection" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "PartnerGUID" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "PassiveMode" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "PreserveInternalLicenseOnUpgrade" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "PreviousRunningMode" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProductAppDataPath" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProductLocalizedName" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProductStatus" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProductType" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProxyBypass" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProxyConfigOverride" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProxyPacUrl" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProxyServer" /t REG_DWORD /d "0" /f
-
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Quarantine" /v "LocalSettingOverridePurgeItemsAfterDelay" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Quarantine" /v "PurgeItemsAfterDelay" /t REG_DWORD /d "0" /f
 
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "RandomizeScheduleTaskTimes" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "RemediationExe" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "Remediation\DisableRim" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "Remediation\EnableLocalFileRollback" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "Remediation\LocalSettingOverrideScan_ScheduleTime" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "Remediation\Scan_ScheduleDay" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "Remediation\Scan_ScheduleTime" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ReportingGUID" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "RoutineActionDelay" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "RoutineActionMaxDelay" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "RpcUserQuota" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ServiceHardeningFlags" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ServiceKeepAlive" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "SmartLockerMode" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "SpecialRunningModeKillbitted" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "SupportLogEventIds" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "SupportLogLocation" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ThreatFileHashLogging" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "TrustedImageIdentifier" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Remediation" /v "DisableRim" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Remediation" /v "EnableLocalFileRollback" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Remediation" /v "LocalSettingOverrideScan_ScheduleTime" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Remediation" /v "Scan_ScheduleDay" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Remediation" /v "Scan_ScheduleTime" /t REG_DWORD /d "0" /f
 
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Real-Time Protection" /v "AVOnAccessScanErrorRetryCount" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Real-Time Protection" /v "DirectoryMonitoringKillbit" /t REG_DWORD /d "0" /f
