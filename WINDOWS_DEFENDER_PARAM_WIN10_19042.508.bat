@@ -87,26 +87,29 @@ REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "Maintenance
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MaintenanceNonCriticalDeadline" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ManagedDefenderProductType" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MdmSubscriberIds" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "Miscellaneous Configuration\DisableDatagramProcessing" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "Miscellaneous Configuration\DisableLastAccessTimeSuppression" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "Miscellaneous Configuration\NIS_CustomSmartscreenHostname" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MpEngine\EnableFileHashComputation" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MpEngine\MpBafsExtendedTimeout" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MpEngine\MpCampGradualRelease" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MpEngine\MpCampRing" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MpEngine\MpCloudBlockLevel" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MpEngine\MpContinueOnDetection" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MpEngine\MpEnableMBA" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MpEngine\MpEnablePUS" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MpEngine\MpEnablePUSRemoval" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MpEngine\MpEnableTest" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MpEngine\MpEngineRing" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MpEngine\MpGradualEngineRelease" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MpEngine\MpSevilleEnable" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "MpEngine\SafeReleaseRing" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "NIS\Consumers\IPS\DisableBmNetworkSensor" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "NIS\Consumers\IPS\DisableDatagramProcessing" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "NIS\StartDelay" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" /v "DisableDatagramProcessing" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" /v "DisableLastAccessTimeSuppression" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" /v "NIS_CustomSmartscreenHostname" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "EnableFileHashComputation" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "MpBafsExtendedTimeout" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "MpCampGradualRelease" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "MpCampRing" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "MpCloudBlockLevel" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "MpContinueOnDetection" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "MpEnableMBA" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "MpEnablePUS" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "MpEnablePUSRemoval" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "MpEnableTest" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "MpEngineRing" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "MpGradualEngineRelease" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "MpSevilleEnable" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\MpEngine" /v "SafeReleaseRing" /t REG_DWORD /d "0" /f
+
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\NIS\Consumers\IPS" /v "DisableBmNetworkSensor" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\NIS\Consumers\IPS" /v "DisableDatagramProcessing" /t REG_DWORD /d "0" /f
+
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\NIS" /v "StartDelay" /t REG_DWORD /d "0" /f
+
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "NewLocation" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "OOBEInstallTime" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "OldMachineGUID" /t REG_DWORD /d "0" /f
@@ -125,8 +128,10 @@ REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProxyBypass
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProxyConfigOverride" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProxyPacUrl" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "ProxyServer" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "Quarantine\LocalSettingOverridePurgeItemsAfterDelay" /t REG_DWORD /d "0" /f
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "Quarantine\PurgeItemsAfterDelay" /t REG_DWORD /d "0" /f
+
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Quarantine" /v "LocalSettingOverridePurgeItemsAfterDelay" /t REG_DWORD /d "0" /f
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Quarantine" /v "PurgeItemsAfterDelay" /t REG_DWORD /d "0" /f
+
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "RandomizeScheduleTaskTimes" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "RemediationExe" /t REG_DWORD /d "0" /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender" /v "Remediation\DisableRim" /t REG_DWORD /d "0" /f
